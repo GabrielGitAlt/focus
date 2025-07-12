@@ -691,3 +691,12 @@ footer p {
   display: flex !important;
   align-items: center !important;
 }
+
+.row > .col-lg-4.mb-4 {
+  margin-bottom: 3rem !important;
+}
+@media (max-width: 991.98px) {
+  .row > .col-lg-4.mb-4 {
+    margin-bottom: 2rem !important;
+  }
+}
