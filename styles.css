@@ -190,14 +190,16 @@ p {
 /* =============================
    HERO SPLIT SECTION
    ============================= */
+/* HERO SPLIT SECTION - Move content closer to top and enlarge text */
 .hero-section-split {
   background: var(--white);
   min-height: 80vh;
   display: flex;
-  align-items: stretch;
+  align-items: flex-start; /* Move content to top */
 }
 .hero-section-split .row {
   min-height: 80vh;
+  align-items: flex-start !important; /* Move row content to top */
 }
 .hero-text-col {
   background: var(--white);
@@ -206,19 +208,12 @@ p {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 4.5rem 3.5rem 4.5rem 4.5rem !important;
+  padding: 2rem 3.5rem 4.5rem 4.5rem !important; /* Reduce top padding */
 }
-.hero-title {
-  font-family: "Cormorant", Georgia, serif;
-  font-size: 3.5rem;
-  font-weight: 700;
-  color: var(--dark-color);
-  line-height: 1.1;
-  margin-bottom: 2.5rem;
-}
+
 .hero-subtext {
   font-family: "Cormorant", Georgia, serif;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   color: #444;
   font-style: italic;
   font-weight: 400;
@@ -234,8 +229,8 @@ p {
 }
 .hero-btn {
   border-radius: 0.4rem;
-  padding: 1.1rem 2.2rem 1.1rem 1.5rem;
-  font-size: 1.25rem;
+  padding: 1.3rem 2.5rem 1.3rem 1.8rem;
+  font-size: 1.5rem;
   font-family: "Work Sans", sans-serif;
   font-weight: 500;
   text-transform: uppercase;
@@ -300,13 +295,10 @@ p {
   .hero-text-col {
     padding: 2.5rem 1.2rem 2.5rem 1.2rem !important;
   }
-  .hero-title {
-    font-size: 2.2rem;
-    margin-bottom: 1.5rem;
-  }
+
   .hero-btn {
-    font-size: 1rem;
-    padding: 0.8rem 1.2rem 0.8rem 1rem;
+    font-size: 1.1rem;
+    padding: 1rem 1.5rem 1rem 1.2rem;
     width: 10rem;
     min-width: 10rem;
     max-width: 10rem;
@@ -318,13 +310,9 @@ p {
   }
 }
 @media (max-width: 576px) {
-  .hero-title {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-  }
   .hero-btn {
-    padding: 0.5rem 1.2rem 0.5rem 1rem;
-    font-size: 0.95rem;
+    font-size: 0.98rem;
+    padding: 0.7rem 1rem 0.7rem 0.7rem;
     margin-top: 1rem;
     width: 98vw;
   }
@@ -340,13 +328,14 @@ p {
 /* =============================
    FOCUS ACRONYM HEADING
    ============================= */
+/* Make hero section text larger (except the muted intro line) */
 .focus-acronym-heading {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   width: 100%;
   font-family: "Cormorant", Georgia, serif;
-  font-size: 3.2rem;
+  font-size: 4rem;
   font-weight: 700;
   line-height: 1.1;
   margin-bottom: 2.5rem;
@@ -363,6 +352,7 @@ p {
 .focus-acronym-rest {
   color: var(--dark-color);
   font-weight: 400;
+  font-size: 1em;
 }
 .focus-acronym-f {
   margin-left: 0.13em;
