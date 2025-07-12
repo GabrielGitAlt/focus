@@ -569,17 +569,26 @@ footer p {
   border-radius: 2px;
 }
 .hero-btn {
-  border-radius: 8px;
-  padding: 0.75rem 2rem;
-  font-size: 1.1rem;
+  border-radius: 6px;
+  padding: 0.7rem 2.2rem 0.7rem 1.5rem;
+  font-size: 1rem;
   font-family: "Work Sans", sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.06em;
   background: var(--primary-color);
   border: none;
   box-shadow: var(--shadow);
   transition: var(--transition);
+  display: inline-flex;
+  align-items: center;
+  min-width: 0;
+  width: auto;
+  margin-top: 2.5rem;
+  margin-bottom: 0;
+}
+.hero-btn span {
+  font-weight: 400;
 }
 .hero-btn:hover {
   background: #d63101;
@@ -610,32 +619,64 @@ footer p {
   box-shadow: var(--shadow-lg);
 }
 
-/* ===== RESPONSIVE HERO SPLIT ===== */
+/* HERO SUBTEXT REFINEMENT */
+.hero-subtext {
+  font-family: "Cormorant", Georgia, serif;
+  font-size: 1.1rem;
+  color: #444;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+.orange-line {
+  width: 22px;
+  height: 2px;
+  background: var(--primary-color);
+  border-radius: 1px;
+  margin-bottom: 2px;
+}
+
+/* HERO SECTION SPACING */
+.hero-title {
+  margin-bottom: 2.5rem;
+}
+.hero-text-col {
+  padding: 4.5rem 3.5rem 4.5rem 4.5rem !important;
+}
+.d-flex.align-items-center.mb-4 {
+  margin-bottom: 2.5rem !important;
+}
+
+/* RESPONSIVE REFINEMENTS */
 @media (max-width: 991.98px) {
-  .hero-section-split .row {
-    min-height: 60vh;
+  .hero-text-col {
+    padding: 2.5rem 1.2rem 2.5rem 1.2rem !important;
   }
   .hero-title {
-    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
   }
-  .hero-img-col {
-    display: none !important;
+  .d-flex.align-items-center.mb-4 {
+    margin-bottom: 1.5rem !important;
   }
-  .hero-text-col {
-    min-height: 350px;
-    padding: 2rem 1.5rem !important;
+  .hero-btn {
+    margin-top: 1.5rem;
   }
 }
 @media (max-width: 576px) {
   .hero-title {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
   }
   .hero-btn {
-    padding: 0.6rem 1.2rem;
-    font-size: 1rem;
+    padding: 0.5rem 1.2rem 0.5rem 1rem;
+    font-size: 0.95rem;
+    margin-top: 1rem;
   }
   .orange-line {
-    width: 20px;
+    width: 14px;
     height: 2px;
+  }
+  .hero-subtext {
+    font-size: 0.98rem;
   }
 }
