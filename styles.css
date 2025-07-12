@@ -836,7 +836,6 @@ footer p {
     top: 100% !important;
     transform: none !important;
     z-index: 9999;
-    margin-left: -100px;
   }
   .navbar-nav .dropdown-item {
     text-align: left;
@@ -854,19 +853,16 @@ footer p {
     width: 100vw;
     background: var(--white);
     z-index: 999;
+    /* Add this to ensure scrolling works and content isn't clipped */
     display: flex !important;
     flex-direction: column;
     align-items: stretch;
     padding-bottom: 3rem !important; /* Add extra space at the bottom for scroll visibility */
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; /* IE and Edge */
-  }
-  .navbar-collapse::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, Opera */
   }
   .navbar-nav {
     flex-direction: column !important;
     width: 100%;
+    /* Add this to allow the nav list to grow and scroll */
     flex: 1 1 auto;
   }
   .navbar-nav .dropdown {

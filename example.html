@@ -613,104 +613,12 @@
       function unlockBodyScroll() {
         document.body.style.overflow = "";
       }
-
-      // Mobile navigation transformation
-      let socialNavItems = [];
-      function transformMobileNavigation() {
-        const socialDropdown = document.querySelector(".nav-item.dropdown");
-        const navbarNav = document.querySelector(".navbar-nav");
-
-        if (!socialDropdown || !navbarNav) return;
-
-        // Check if we're on mobile (Bootstrap's lg breakpoint)
-        const isMobile = window.innerWidth < 992;
-
-        if (isMobile) {
-          // Only transform if not already transformed
-          if (socialDropdown.style.display === "none") return;
-          const dropdownToggle =
-            socialDropdown.querySelector(".dropdown-toggle");
-          const dropdownMenu = socialDropdown.querySelector(".dropdown-menu");
-
-          if (dropdownToggle && dropdownMenu) {
-            // Remove dropdown classes and attributes
-            dropdownToggle.classList.remove("dropdown-toggle");
-            dropdownToggle.removeAttribute("data-bs-toggle");
-            dropdownToggle.removeAttribute("aria-expanded");
-            dropdownToggle.removeAttribute("id");
-
-            // Hide the dropdown menu
-            dropdownMenu.style.display = "none";
-
-            // Get all dropdown items and convert them to nav items
-            const dropdownItems =
-              dropdownMenu.querySelectorAll(".dropdown-item");
-            socialNavItems = [];
-            dropdownItems.forEach((item, index) => {
-              // Create new nav item
-              const newNavItem = document.createElement("li");
-              newNavItem.className = "nav-item mx-3 social-nav-item";
-
-              // Create new nav link
-              const newNavLink = document.createElement("a");
-              newNavLink.className = "nav-link";
-              newNavLink.href = item.href;
-              newNavLink.target = item.target;
-              newNavLink.innerHTML = item.innerHTML;
-
-              // Add the new nav link to the nav item
-              newNavItem.appendChild(newNavLink);
-
-              // Insert after the social dropdown
-              socialDropdown.parentNode.insertBefore(
-                newNavItem,
-                socialDropdown.nextSibling
-              );
-              socialNavItems.push(newNavItem);
-            });
-
-            // Hide the original social dropdown
-            socialDropdown.style.display = "none";
-          }
-        } else {
-          // Restore dropdown if it was hidden
-          if (socialDropdown.style.display === "none") {
-            socialDropdown.style.display = "";
-            // Restore dropdown classes and attributes if needed
-            const dropdownToggle = socialDropdown.querySelector("a.nav-link");
-            if (dropdownToggle) {
-              dropdownToggle.classList.add("dropdown-toggle");
-              dropdownToggle.setAttribute("data-bs-toggle", "dropdown");
-              dropdownToggle.setAttribute("aria-expanded", "false");
-              dropdownToggle.setAttribute("id", "socialDropdown");
-            }
-            const dropdownMenu = socialDropdown.querySelector(".dropdown-menu");
-            if (dropdownMenu) {
-              dropdownMenu.style.display = "";
-            }
-            // Remove all social nav items added for mobile
-            socialNavItems.forEach((item) => {
-              if (item.parentNode) item.parentNode.removeChild(item);
-            });
-            socialNavItems = [];
-          }
-        }
-      }
-
       // Listen for navbar open/close
       document.addEventListener("DOMContentLoaded", function () {
         var navbarCollapse = document.getElementById("navbarNav");
         if (!navbarCollapse) return;
         navbarCollapse.addEventListener("show.bs.collapse", lockBodyScroll);
         navbarCollapse.addEventListener("hide.bs.collapse", unlockBodyScroll);
-
-        // Transform navigation on page load
-        transformMobileNavigation();
-
-        // Transform navigation on window resize
-        window.addEventListener("resize", function () {
-          transformMobileNavigation();
-        });
       });
     </script>
   </body>
