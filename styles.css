@@ -700,3 +700,7 @@ footer p {
     margin-bottom: 2rem !important;
   }
 }
+
+.subject-icon {
+  opacity: 0.92;
+}
