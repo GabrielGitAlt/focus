@@ -1,22 +1,13 @@
 /* =============================
-   CSS VARIABLES (Color Palette)
+   CSS VARIABLES (Simplified Palette)
    ============================= */
 :root {
-  --primary-color: #f23801; /* Main accent color (orange) */
-  --secondary-color: #f7e4d6; /* Light beige background */
-  --dark-color: #000000; /* Main dark text */
-  --light-color: #fafafa; /* Light background */
-  --text-color: #777777; /* Default body text */
-  --white: #ffffff; /* Pure white */
-  --gray-100: #f8f9fa; /* Lightest gray */
-  --gray-200: #e9ecef; /* Lighter gray */
-  --gray-300: #dee2e6; /* Light gray for borders */
-  --gray-400: #ced4da; /* Medium light gray */
-  --gray-500: #adb5bd; /* Medium gray */
-  --gray-600: #6c757d; /* Medium dark gray */
-  --gray-700: #495057; /* Dark gray for nav */
-  --gray-800: #343a40; /* Very dark gray */
-  --gray-900: #212529; /* Almost black */
+  --primary-color: #f23801; /* Main accent (orange) */
+  --secondary-color: #f7e4d6; /* Secondary accent (beige) */
+  --dark-color: #222; /* Main text color */
+  --light-color: #fafafa; /* Main background */
+  --gray: #e9ecef; /* Subtle border/background */
+  --white: #fff; /* Pure white */
   --shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Standard shadow */
   --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1); /* Large shadow */
   --transition: all 0.3s ease; /* Smooth transitions */
@@ -39,7 +30,7 @@ body {
   font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, sans-serif;
   line-height: 1.6;
-  color: var(--text-color);
+  color: var(--dark-color);
   font-size: 16px;
   overflow-x: hidden;
 }
