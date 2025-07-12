@@ -498,6 +498,7 @@
 }
 
 .about-involved-card {
+  background: var(--white);
   border: none;
   border-radius: 0;
   box-shadow: none;
@@ -506,26 +507,24 @@
   align-items: stretch;
   min-height: 320px;
   position: relative;
-  padding: 1rem;
+  padding: 0 1.5rem 0 0;
 }
 .about-involved-border {
   width: 2px;
   background: var(--primary-color);
   border-radius: 0;
-  margin-right: 0.7rem;
+  margin-right: 1.1rem;
   min-height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
+  align-self: stretch;
+  flex-shrink: 0;
 }
 .about-involved-content {
-  padding-left: 1.1rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   height: 100%;
   width: 100%;
+  padding-left: 0;
 }
 .about-involved-title {
   font-family: "Cormorant", serif;
@@ -554,12 +553,6 @@
 .about-involved-link:hover {
   color: var(--dark-color);
 }
-.about-involved-link .about-involved-link-text {
-  text-decoration: underline;
-}
-.about-involved-link:hover .about-involved-link-text {
-  text-decoration: underline;
-}
 .about-involved-arrow {
   font-size: 1.2em;
   margin-left: 0.5em;
@@ -573,28 +566,25 @@
 @media (max-width: 991.98px) {
   .about-involved-card {
     min-height: 220px;
-    padding-left: 0.7rem;
+    padding: 0 0.7rem 0 0;
   }
-  .about-involved-content {
-    padding-left: 1.2rem;
-  }
-  .about-involved-title {
-    font-size: 1.3rem;
+  .about-involved-border {
+    margin-right: 0.7rem;
   }
 }
 @media (max-width: 576px) {
   .about-involved-card {
     flex-direction: column;
     min-height: 0;
-    padding-left: 0.5rem;
+    padding: 0 0.5rem 0 0;
   }
   .about-involved-border {
-    position: static;
     width: 100%;
     height: 2px;
     margin: 0 0 1rem 0;
+    align-self: unset;
   }
   .about-involved-content {
-    padding-left: 0.5rem;
+    padding-left: 0;
   }
 }
