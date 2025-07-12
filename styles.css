@@ -121,7 +121,8 @@ p {
 .navbar {
   padding: 1rem 0;
   transition: var(--transition);
-  box-shadow: var(--shadow);
+  background: var(--white) !important;
+  box-shadow: none !important;
 }
 .custom-navbar {
   min-height: 90px;
@@ -131,7 +132,7 @@ p {
   top: 0;
   z-index: 1050;
   background: var(--white);
-  box-shadow: var(--shadow);
+  box-shadow: none !important;
 }
 .logo-icon svg {
   display: block;
