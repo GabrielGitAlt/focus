@@ -28,9 +28,33 @@
   font-family: "Work Sans", sans-serif;
 }
 
+.about-hero-img {
+  max-width: 520px;
+  width: 100%;
+  min-width: 220px;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(34, 102, 51, 0.15);
+}
+@media (max-width: 991.98px) {
+  .about-hero-img {
+    max-width: 350px;
+    height: 260px;
+  }
+}
+@media (max-width: 576px) {
+  .about-hero-img {
+    max-width: 100%;
+    min-width: 0;
+    height: 180px;
+    margin-top: 1.5rem;
+  }
+}
+
 /* Mission Section */
 .about-mission-section {
-  padding: 80px 0;
+  padding: 10px 0;
   background: #fff;
 }
 
@@ -135,6 +159,10 @@
 }
 
 .team-member-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
   background: #fff;
   border-radius: 15px;
   box-shadow: 0 8px 25px rgba(34, 102, 51, 0.1);
@@ -169,6 +197,17 @@
 
 .team-member-info {
   padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.team-member-content-fixed {
+  min-height: 220px;
+  max-height: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .team-member-name {
@@ -206,6 +245,13 @@
   border-top: 1px solid rgba(34, 102, 51, 0.2);
   padding-top: 1rem;
 }
+.team-member-contact hr {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  border: none;
+  border-top: 1px solid rgba(34, 102, 51, 0.2);
+}
 
 .team-member-contact p {
   margin-bottom: 0.5rem;
@@ -227,6 +273,8 @@
   display: flex;
   gap: 1rem;
   margin-top: 1rem;
+  justify-content: center;
+  width: 100%;
 }
 
 .social-link {
@@ -355,6 +403,15 @@
   }
 }
 
+.about-engagement-heading {
+  font-family: "Cormorant", serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 0;
+  letter-spacing: 0.01em;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .about-hero-title {
@@ -408,5 +465,42 @@
 
   .team-member-info {
     padding: 1.5rem;
+  }
+}
+.about-mission-section .row {
+  align-items: center;
+}
+.about-mission-section .section-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  font-family: "Cormorant", serif;
+  margin-bottom: 0;
+}
+@media (max-width: 991.98px) {
+  .about-mission-section .section-title {
+    text-align: center !important;
+    margin-bottom: 1rem;
+  }
+  .about-mission-section .col-lg-4,
+  .about-mission-section .col-lg-8 {
+    text-align: center;
+  }
+}
+
+.about-mission-heading {
+  font-family: "Cormorant", serif;
+  font-size: 4.2rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  text-align: left;
+  line-height: 1.1;
+  margin-bottom: 0;
+  letter-spacing: 0.01em;
+}
+@media (max-width: 991.98px) {
+  .about-mission-heading {
+    font-size: 2.5rem;
+    text-align: center;
   }
 }
