@@ -952,9 +952,12 @@ footer p {
 .focus-acronym-rest {
   color: var(--dark-color);
   font-weight: 400;
-  font-family: inherit;
-  margin-bottom: 0.18em;
-  display: block;
+}
+.focus-acronym-f {
+  margin-left: 0.13em;
+}
+.focus-acronym-s {
+  margin-left: 0.13em;
 }
 @media (max-width: 991.98px) {
   .focus-acronym-heading {
