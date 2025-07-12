@@ -418,7 +418,7 @@ p {
   box-shadow: none;
   position: relative;
   padding-left: 1.1rem;
-  margin-right: 2.5rem;
+  margin-right: 1rem;
 }
 .row > .col-lg-4:last-child .card {
   margin-right: 0;
@@ -527,7 +527,7 @@ p {
 }
 @media (max-width: 991.98px) {
   .card {
-    margin-right: 1.2rem;
+    margin-right: 0.5rem;
   }
 }
 
