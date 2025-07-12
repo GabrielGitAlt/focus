@@ -81,13 +81,6 @@
   text-align: center;
 }
 
-.mission-image {
-  border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(34, 102, 51, 0.15);
-  max-width: 100%;
-  height: auto;
-}
-
 /* Monthly Sessions Section */
 .about-sessions-section {
   padding: 80px 0;
@@ -502,5 +495,101 @@
   .about-mission-heading {
     font-size: 2.5rem;
     text-align: center;
+  }
+}
+
+.about-involved-card {
+  background: var(--white);
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  min-height: 320px;
+  position: relative;
+  padding-left: 1.1rem;
+}
+.about-involved-border {
+  width: 2px;
+  background: var(--primary-color);
+  border-radius: 0;
+  margin-right: 1.5rem;
+  min-height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+.about-involved-content {
+  padding-left: 2.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+  width: 100%;
+}
+.about-involved-title {
+  font-family: "Cormorant", serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+.about-involved-text {
+  font-size: 1.08rem;
+  color: var(--dark-color);
+  font-family: "Work Sans", sans-serif;
+  margin-bottom: 2rem;
+}
+.about-involved-link {
+  display: inline-flex;
+  align-items: center;
+  font-size: 1.08rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.2s;
+  margin-right: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.about-involved-link:hover {
+  color: var(--dark-color);
+  text-decoration: underline;
+}
+.about-involved-arrow {
+  font-size: 1.2em;
+  margin-left: 0.5em;
+  transition: margin-left 0.2s;
+}
+.about-involved-link:hover .about-involved-arrow {
+  margin-left: 0.7em;
+}
+@media (max-width: 991.98px) {
+  .about-involved-card {
+    min-height: 220px;
+    padding-left: 0.7rem;
+  }
+  .about-involved-content {
+    padding-left: 1.2rem;
+  }
+  .about-involved-title {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 576px) {
+  .about-involved-card {
+    flex-direction: column;
+    min-height: 0;
+    padding-left: 0.5rem;
+  }
+  .about-involved-border {
+    position: static;
+    width: 100%;
+    height: 2px;
+    margin: 0 0 1rem 0;
+  }
+  .about-involved-content {
+    padding-left: 0.5rem;
   }
 }
