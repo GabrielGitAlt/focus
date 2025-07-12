@@ -228,35 +228,72 @@ p {
   border-radius: 1px;
   margin-bottom: 2px;
 }
+.hero-btn,
+.hero-btn-secondary {
+  text-decoration: none !important;
+}
+/* Unified hero button styles */
 .hero-btn {
   font-size: 1.1rem;
   padding: 0.8rem 1.5rem 0.8rem 1.1rem;
+  margin-top: 1rem;
+  margin-right: 0.7rem;
+  border: 2px solid var(--primary-color) !important;
+  background: var(--white);
+  color: var(--primary-color);
+  border-radius: 0.4rem;
   font-family: "Work Sans", sans-serif;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  background: var(--primary-color);
-  border: none;
   box-shadow: var(--shadow);
   transition: var(--transition);
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  justify-content: flex-start;
-  width: auto;
-  min-width: 0;
-  max-width: 100%;
-  margin: 2.5rem 0 0 0;
-  text-align: center;
+  justify-content: center;
+  text-decoration: none !important;
 }
-.hero-btn span.hero-arrow {
-  margin-left: 1.5rem;
-  font-size: 1.4rem;
-  top: 1px;
-}
-.hero-btn:hover {
-  background: #d63101;
+.hero-btn:hover,
+.hero-btn:focus {
+  background: var(--primary-color);
   color: var(--white);
-  transform: translateY(-2px);
+  border: 2px solid var(--primary-color) !important;
+  outline: none;
+}
+.hero-btn:active {
+  border: 2px solid var(--primary-color) !important;
+  outline: none;
+}
+.hero-btn .hero-arrow,
+.hero-btn:hover .hero-arrow,
+.hero-btn:focus .hero-arrow {
+  color: inherit !important;
+  margin-left: 0.7em;
+  display: inline-flex;
+  align-items: center;
+  transition: var(--transition);
+}
+.hero-btn-secondary {
+  font-size: 1.1rem;
+  padding: 0.8rem 1.5rem 0.8rem 1.1rem;
+  border: 2px solid var(--primary-color);
+  background: var(--white);
+  color: var(--primary-color);
+  border-radius: 0.4rem;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none !important;
+}
+.hero-btn-secondary:hover {
+  background: var(--primary-color);
+  color: var(--white);
 }
 .hero-img-col {
   display: flex;
@@ -300,9 +337,6 @@ p {
   .hero-btn {
     font-size: 1rem;
     padding: 0.7rem 1.2rem 0.7rem 0.9rem;
-    width: 10rem;
-    min-width: 10rem;
-    max-width: 10rem;
   }
   .hero-img-col,
   .hero-img-wrapper,
@@ -318,8 +352,6 @@ p {
   .hero-btn {
     font-size: 0.95rem;
     padding: 0.6rem 1rem 0.6rem 0.7rem;
-    margin-top: 1rem;
-    width: 98vw;
   }
   .orange-line {
     width: 14px;
@@ -560,4 +592,15 @@ footer p {
   .card-body {
     padding: 1rem;
   }
+}
+
+.ms-2 {
+  margin-left: 0.5rem !important;
+}
+.ms-3 {
+  margin-left: 1rem !important;
+}
+.d-flex.align-items-center {
+  display: flex !important;
+  align-items: center !important;
 }
