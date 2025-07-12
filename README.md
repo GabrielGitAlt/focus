@@ -22,10 +22,11 @@ focus/
 │   ├── navigation.html  # Navigation bar
 │   └── footer.html      # Footer
 ├── assets/              # Static assets
-│   ├── css/            # Stylesheets
-│   │   └── styles.css  # Main stylesheet
 │   └── images/         # Images
 │       └── landing.webp # Hero image
+├── styles/              # Stylesheets
+│   ├── styles.css      # Main stylesheet
+│   └── about.css       # About page styles
 ├── index.html          # Home page
 ├── Gemfile            # Ruby dependencies
 └── README.md          # This file
@@ -76,7 +77,7 @@ The built site will be in the `_site` directory.
 
 ### Colors
 
-The site uses CSS custom properties for easy color customization. The main colors are defined in `assets/css/styles.css`:
+The site uses CSS custom properties for easy color customization. The main colors are defined in `styles/styles.css`:
 
 - `--primary-color`: Deep green accent (#226633)
 - `--secondary-color`: Light beige/earthy background (#f1f5ee)
