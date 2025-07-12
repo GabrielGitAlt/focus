@@ -711,6 +711,24 @@ footer p {
   letter-spacing: 0.04em;
   font-style: italic;
 }
+.footer-links-columns {
+  display: flex;
+  gap: 2.5rem;
+}
+.footer-links-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.footer-links-col a {
+  color: var(--white);
+  text-decoration: none;
+  transition: color 0.2s;
+  font-weight: 500;
+}
+.footer-links-col a:hover {
+  color: var(--primary-color);
+}
 @media (max-width: 768px) {
   .footer-custom .footer-container {
     flex-direction: column;
@@ -726,6 +744,10 @@ footer p {
   .footer-bottom {
     margin-top: 2rem;
     font-size: 1rem;
+  }
+  .footer-links-columns {
+    flex-direction: column;
+    gap: 1.5rem;
   }
 }
 
