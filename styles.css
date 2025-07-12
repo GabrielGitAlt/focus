@@ -967,56 +967,30 @@ footer p {
   }
 }
 
-/* FOCUS ACRONYM HEADING - FIXED LETTER COLUMN, ALIGNED REST */
-.focus-acronym-row {
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
+/* FOCUS ACRONYM HEADING - NATURAL WORD FLOW */
+.focus-acronym-heading {
+  font-family: "Cormorant", Georgia, serif;
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 2.5rem;
+}
+.focus-acronym-heading div {
+  display: block;
   margin-bottom: 0.18em;
 }
 .focus-acronym-letter {
   color: var(--primary-color);
-  font-size: 1.15em;
   font-weight: 700;
   font-family: inherit;
-  width: 2.2em;
-  min-width: 2.2em;
-  max-width: 2.2em;
-  text-align: center;
-  display: inline-block;
-}
-.focus-acronym-rest {
-  color: var(--dark-color);
-  font-weight: 400;
-  font-family: inherit;
-  display: inline-block;
-  text-align: left;
 }
 @media (max-width: 991.98px) {
   .focus-acronym-heading {
     font-size: 2rem;
-  }
-  .focus-acronym-letter {
-    width: 1.4em;
-    min-width: 1.4em;
-    max-width: 1.4em;
   }
 }
 @media (max-width: 576px) {
   .focus-acronym-heading {
     font-size: 1.2rem;
   }
-  .focus-acronym-letter {
-    width: 1em;
-    min-width: 1em;
-    max-width: 1em;
-  }
-}
-
-/* Further reduce space between FOCUS acronym columns */
-.focus-acronym-letter {
-  width: 0.92em;
-  min-width: 0.92em;
-  max-width: 0.92em;
-  margin-right: 0;
 }
