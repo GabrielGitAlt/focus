@@ -271,6 +271,90 @@
   box-shadow: 0 5px 15px rgba(34, 102, 51, 0.3);
 }
 
+/* Engagement Section (Combined) */
+.about-engagement-section {
+  background: var(--tertiary-color);
+  padding: 80px 0;
+}
+.engagement-card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(34, 102, 51, 0.08);
+  border: 1px solid rgba(34, 102, 51, 0.08);
+  transition: box-shadow 0.3s, transform 0.3s;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.engagement-card:hover {
+  box-shadow: 0 15px 35px rgba(34, 102, 51, 0.15);
+  transform: translateY(-3px);
+}
+@media (max-width: 991.98px) {
+  .about-engagement-section {
+    padding: 60px 0;
+  }
+  .engagement-card {
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 576px) {
+  .about-engagement-section {
+    padding: 40px 0;
+  }
+  .engagement-card {
+    padding: 1.2rem !important;
+  }
+}
+
+.about-engagement-block {
+  background: var(--white);
+  border-radius: 12px;
+  padding: 2.5rem 2rem 2rem 2rem;
+  box-shadow: none;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100%;
+  transition: background 0.2s;
+}
+.about-engagement-title {
+  font-family: "Cormorant", serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+.about-engagement-subtitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-family: "Work Sans", sans-serif;
+}
+.about-engagement-text {
+  font-size: 1.05rem;
+  color: var(--dark-color);
+  font-family: "Work Sans", sans-serif;
+  margin-bottom: 1.5rem;
+}
+.about-engagement-block .about-cta-btn {
+  margin-top: auto;
+  width: fit-content;
+}
+@media (max-width: 991.98px) {
+  .about-engagement-block {
+    padding: 2rem 1.2rem 1.5rem 1.2rem;
+  }
+}
+@media (max-width: 576px) {
+  .about-engagement-block {
+    padding: 1.2rem 0.7rem 1rem 0.7rem;
+  }
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .about-hero-title {
