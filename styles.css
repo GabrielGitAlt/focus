@@ -7,7 +7,7 @@
   --tertiary-color: #e3f2e8; /* Light green background, between primary and secondary, for soft section backgrounds */
   --dark-color: #184422; /* Dark green for text */
   --gray: #b7c2b1; /* Muted greenish-gray for borders */
-  --white: #f9f9f6; /* Warm off-white */
+  --white: #fefef9; /* Warm off-white */
   --shadow: 0 4px 6px rgba(34, 102, 51, 0.07); /* Subtle green shadow */
   --shadow-lg: 0 10px 15px rgba(34, 102, 51, 0.1); /* Large green shadow */
   --transition: all 0.3s ease;
