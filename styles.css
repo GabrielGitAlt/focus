@@ -732,6 +732,7 @@ footer p {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  margin-top: 2.5rem;
 }
 .testimonial-dot {
   width: 10px;
