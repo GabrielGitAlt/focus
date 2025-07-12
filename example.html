@@ -615,6 +615,7 @@
       }
 
       // Mobile navigation transformation
+      let socialNavItems = [];
       function transformMobileNavigation() {
         const socialDropdown = document.querySelector(".nav-item.dropdown");
         const navbarNav = document.querySelector(".navbar-nav");
@@ -625,7 +626,8 @@
         const isMobile = window.innerWidth < 992;
 
         if (isMobile) {
-          // Remove dropdown functionality and convert to direct links
+          // Only transform if not already transformed
+          if (socialDropdown.style.display === "none") return;
           const dropdownToggle =
             socialDropdown.querySelector(".dropdown-toggle");
           const dropdownMenu = socialDropdown.querySelector(".dropdown-menu");
@@ -643,10 +645,11 @@
             // Get all dropdown items and convert them to nav items
             const dropdownItems =
               dropdownMenu.querySelectorAll(".dropdown-item");
+            socialNavItems = [];
             dropdownItems.forEach((item, index) => {
               // Create new nav item
               const newNavItem = document.createElement("li");
-              newNavItem.className = "nav-item mx-3";
+              newNavItem.className = "nav-item mx-3 social-nav-item";
 
               // Create new nav link
               const newNavLink = document.createElement("a");
@@ -663,10 +666,33 @@
                 newNavItem,
                 socialDropdown.nextSibling
               );
+              socialNavItems.push(newNavItem);
             });
 
             // Hide the original social dropdown
             socialDropdown.style.display = "none";
+          }
+        } else {
+          // Restore dropdown if it was hidden
+          if (socialDropdown.style.display === "none") {
+            socialDropdown.style.display = "";
+            // Restore dropdown classes and attributes if needed
+            const dropdownToggle = socialDropdown.querySelector("a.nav-link");
+            if (dropdownToggle) {
+              dropdownToggle.classList.add("dropdown-toggle");
+              dropdownToggle.setAttribute("data-bs-toggle", "dropdown");
+              dropdownToggle.setAttribute("aria-expanded", "false");
+              dropdownToggle.setAttribute("id", "socialDropdown");
+            }
+            const dropdownMenu = socialDropdown.querySelector(".dropdown-menu");
+            if (dropdownMenu) {
+              dropdownMenu.style.display = "";
+            }
+            // Remove all social nav items added for mobile
+            socialNavItems.forEach((item) => {
+              if (item.parentNode) item.parentNode.removeChild(item);
+            });
+            socialNavItems = [];
           }
         }
       }
@@ -683,10 +709,7 @@
 
         // Transform navigation on window resize
         window.addEventListener("resize", function () {
-          // Only transform if we haven't already done it on mobile
-          if (window.innerWidth < 992) {
-            transformMobileNavigation();
-          }
+          transformMobileNavigation();
         });
       });
     </script>
