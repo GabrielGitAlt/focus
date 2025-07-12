@@ -543,7 +543,7 @@ p {
 }
 .form-control:focus {
   border-color: var(--primary-color);
-  box-shadow: 0 0 0 0.2rem rgba(242, 56, 1, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(34, 102, 51, 0.3);
   outline: none;
 }
 .form-control-lg {
