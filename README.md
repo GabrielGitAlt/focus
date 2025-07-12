@@ -27,7 +27,9 @@ focus/
 ├── styles/              # Stylesheets
 │   ├── styles.css      # Main stylesheet
 │   └── about.css       # About page styles
-├── index.html          # Home page
+├── pages/              # Page files
+│   ├── index.html     # Home page
+│   └── about.html     # About page
 ├── Gemfile            # Ruby dependencies
 └── README.md          # This file
 ```
