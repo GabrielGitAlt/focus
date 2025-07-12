@@ -764,3 +764,9 @@ footer p {
     0.7
   ) !important; /* --white with 0.7 opacity */
 }
+.mission-btn:hover,
+.mission-btn:focus {
+  background: var(--primary-color) !important;
+  color: var(--white) !important;
+  border: 2px solid var(--primary-color) !important;
+}
