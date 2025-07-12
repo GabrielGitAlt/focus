@@ -11,19 +11,50 @@
       rel="stylesheet"
     />
 
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light-custom">
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light-custom custom-navbar"
+    >
       <div class="container">
-        <a class="navbar-brand" href="#">
-          <img
-            src="./example_files/5fe0ad463eb77d0022a9657c"
-            alt="LoudSpeech"
-            height="40"
-          />
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <span class="logo-icon me-2">
+            <!-- Example SVG icon for speech bubble -->
+            <svg
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="40" height="40" rx="8" fill="#f7e4d6" />
+              <path
+                d="M12 15h16v10H16l-4 4v-4H12V15z"
+                stroke="#f23801"
+                stroke-width="2"
+                fill="none"
+              />
+            </svg>
+          </span>
+          <span class="logo-text">
+            <span class="fw-bold" style="color: #f23801">LOUDSPEECH</span>
+            <span
+              class="d-block small text-muted"
+              style="font-size: 0.9rem; line-height: 1"
+              >public speaking school</span
+            >
+          </span>
         </a>
 
         <button
@@ -82,22 +113,59 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <p class="text-uppercase text-muted mb-2">
-              Learn Passionate Oratory At
+    <section class="hero-section-split">
+      <div class="container-fluid px-0">
+        <div class="row g-0 align-items-center min-vh-75">
+          <div
+            class="col-lg-6 bg-white hero-text-col d-flex flex-column justify-content-center px-5 py-5"
+          >
+            <p
+              class="text-uppercase text-muted mb-3"
+              style="letter-spacing: 2px"
+            >
+              LEARN PASSIONATE ORATORY AT
             </p>
-            <h1 class="display-4 fw-bold mb-4">
-              <span class="text-primary-custom">LoudSpeech</span> public
-              speaking school.
+            <h1 class="hero-title mb-4">
+              <span class="text-primary-custom">LoudSpeech</span>
+              public<br />speaking school.
             </h1>
-            <p class="lead mb-4">
-              <strong>—</strong> Regardless of age or gender, we are waiting for
-              you.
-            </p>
-            <a href="#about" class="btn btn-primary btn-lg">Learn More</a>
+            <div class="d-flex align-items-center mb-4">
+              <span class="orange-line me-3"></span>
+              <span class="hero-subtext"
+                >Regardless of age or gender, we are waiting for you.</span
+              >
+            </div>
+            <a
+              href="#about"
+              class="btn btn-primary hero-btn d-inline-flex align-items-center"
+            >
+              LEARN MORE
+              <span class="ms-2" style="font-size: 1.2em">
+                <!-- Arrow icon -->
+                <svg
+                  width="20"
+                  height="20"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  viewBox="0 0 24 24"
+                >
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                  <polyline points="12 5 19 12 12 19" />
+                </svg>
+              </span>
+            </a>
+          </div>
+          <div class="col-lg-6 hero-img-col d-none d-lg-block">
+            <div class="hero-img-wrapper">
+              <img
+                src="./example_files/5fe33a02b753230021682488_optimized_1218_c1218x1065-0x0.webp"
+                alt="Public Speaking"
+                class="img-fluid hero-img-grayscale"
+              />
+            </div>
           </div>
         </div>
       </div>
