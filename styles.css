@@ -1012,3 +1012,11 @@ footer p {
     max-width: 1em;
   }
 }
+
+/* Further reduce space between FOCUS acronym columns */
+.focus-acronym-letter {
+  width: 0.92em;
+  min-width: 0.92em;
+  max-width: 0.92em;
+  margin-right: 0;
+}
