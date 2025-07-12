@@ -172,7 +172,6 @@ p {
   .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
     display: block;
     margin-top: 0;
-    margin-left: -50px;
   }
   .navbar-nav .nav-item.dropdown .dropdown-toggle::after {
     transition: transform 0.2s;
@@ -857,7 +856,6 @@ footer p {
     display: flex !important;
     flex-direction: column;
     align-items: stretch;
-    padding-bottom: 3rem !important; /* Add extra space at the bottom for scroll visibility */
   }
   .navbar-nav {
     flex-direction: column !important;
