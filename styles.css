@@ -440,11 +440,12 @@ p {
   text-align: left !important;
 }
 .card-body {
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 350px;
+  padding: 0;
+  padding-left: 0.5em;
+  display: block;
+  min-height: unset;
+  flex-direction: unset;
+  justify-content: unset;
 }
 .card:hover,
 .card:focus {
