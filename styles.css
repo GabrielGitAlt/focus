@@ -560,6 +560,15 @@ footer p {
   line-height: 1.1;
 }
 
+/* STICKY NAVBAR */
+.custom-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1050;
+  background: var(--white);
+  box-shadow: var(--shadow);
+}
+
 /* ===== HERO SPLIT SECTION ===== */
 .hero-section-split {
   background: var(--white);
@@ -752,5 +761,156 @@ footer p {
   .hero-img-wrapper,
   .hero-img-grayscale {
     display: none !important;
+  }
+}
+
+/* HERO BUTTON - LARGE, CENTERED, EXTENDED ARROW */
+.hero-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 440px;
+  max-width: 90vw;
+  margin: 2.5rem auto 0 auto;
+  padding: 2.2rem 0;
+  font-size: 2rem;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border-radius: 0;
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+.hero-btn span.hero-arrow {
+  display: inline-block;
+  margin-left: 2.2rem;
+  font-size: 2.2rem;
+  line-height: 1;
+  position: relative;
+  top: 2px;
+}
+.hero-btn svg.hero-arrow-svg {
+  width: 60px;
+  height: 24px;
+  stroke-width: 3.5;
+}
+.hero-btn:hover {
+  background: #d63101;
+  color: #fff;
+  transform: translateY(-2px);
+}
+@media (max-width: 576px) {
+  .hero-btn {
+    width: 98vw;
+    font-size: 1.1rem;
+    padding: 1.2rem 0;
+  }
+  .hero-btn span.hero-arrow {
+    margin-left: 1.1rem;
+    font-size: 1.2rem;
+  }
+  .hero-btn svg.hero-arrow-svg {
+    width: 32px;
+    height: 14px;
+    stroke-width: 2.5;
+  }
+}
+
+/* HERO HEADING & SUBHEADING SIZE */
+.hero-title {
+  font-size: 4.2rem;
+  margin-bottom: 2.5rem;
+}
+.hero-subtext {
+  font-size: 1.35rem;
+}
+
+/* HERO BUTTON - SMALLER & LEFT-ALIGNED */
+.hero-btn {
+  width: auto;
+  min-width: 0;
+  max-width: 100%;
+  font-size: 1.25rem;
+  padding: 1.1rem 2.2rem 1.1rem 1.5rem;
+  margin: 2.5rem 0 0 0;
+  border-radius: 0.4rem;
+  box-shadow: var(--shadow);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.hero-btn span.hero-arrow {
+  margin-left: 1.5rem;
+  font-size: 1.4rem;
+  top: 1px;
+}
+.hero-btn svg.hero-arrow-svg {
+  width: 38px;
+  height: 18px;
+  stroke-width: 2.5;
+}
+@media (max-width: 991.98px) {
+  .hero-title {
+    font-size: 2.2rem;
+  }
+  .hero-subtext {
+    font-size: 1.05rem;
+  }
+  .hero-btn {
+    font-size: 1rem;
+    padding: 0.8rem 1.2rem 0.8rem 1rem;
+  }
+  .hero-btn span.hero-arrow {
+    margin-left: 0.7rem;
+    font-size: 1rem;
+  }
+  .hero-btn svg.hero-arrow-svg {
+    width: 22px;
+    height: 10px;
+    stroke-width: 2;
+  }
+}
+
+/* HERO BUTTON - FIXED WIDTH, LEFT OF HEADING, CENTERED CONTENT */
+.hero-btn {
+  width: 12rem;
+  min-width: 12rem;
+  max-width: 12rem;
+  font-size: 1rem;
+  padding: 1rem 0.5rem;
+  margin: 0 0 2.5rem 0;
+  border-radius: 0.1rem;
+  box-shadow: var(--shadow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.hero-btn span.hero-arrow {
+  margin-left: 0.7rem;
+  font-size: 1.2rem;
+  top: 1px;
+}
+.hero-btn svg.hero-arrow-svg {
+  width: 22px;
+  height: 10px;
+  stroke-width: 2;
+}
+.hero-text-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+@media (max-width: 991.98px) {
+  .hero-btn {
+    width: 10rem;
+    min-width: 10rem;
+    max-width: 10rem;
+    font-size: 0.95rem;
+    padding: 0.7rem 0.3rem;
   }
 }
