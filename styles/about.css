@@ -102,7 +102,7 @@
 /* Volunteer Section */
 .about-volunteer-section {
   padding: 80px 0;
-  background: #fff;
+  background: var(--white);
 }
 
 .volunteer-description {
@@ -137,7 +137,7 @@
 /* Team Section */
 .about-team-section {
   padding: 80px 0;
-  background: #fff;
+  background: var(--white);
 }
 
 .team-subtitle {
@@ -310,11 +310,11 @@
 
 /* Engagement Section (Combined) */
 .about-engagement-section {
-  background: var(--secondary-color);
+  background: var(--white);
   padding: 80px 0;
 }
 .engagement-card {
-  background: #fff;
+  background: var(--white);
   border-radius: 15px;
   box-shadow: 0 8px 25px rgba(34, 102, 51, 0.08);
   border: 1px solid rgba(34, 102, 51, 0.08);
