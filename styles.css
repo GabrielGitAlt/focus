@@ -550,6 +550,19 @@ p {
   padding: 1.25rem 1.5rem;
   font-size: 1.1rem;
 }
+.contact-form .btn-primary {
+  background: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+  color: var(--white) !important;
+  font-weight: 600;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+.contact-form .btn-primary:hover,
+.contact-form .btn-primary:focus {
+  background: var(--dark-color) !important;
+  border-color: var(--dark-color) !important;
+  color: var(--white) !important;
+}
 
 /* =============================
    FOOTER
