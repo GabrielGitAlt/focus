@@ -826,7 +826,6 @@ footer p {
     width: 100%;
   }
   .navbar-nav .dropdown-menu {
-    min-width: 100vw;
     left: 0 !important;
     right: 0 !important;
     border-radius: 0.75rem;
@@ -860,12 +859,11 @@ footer p {
     text-align: center;
   }
   .navbar-nav .dropdown-toggle {
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    font-size: 1.25rem;
-    font-weight: 600;
+    display: block !important;
+    width: 100% !important;
+    text-align: center !important;
+    justify-content: unset !important;
+    align-items: unset !important;
   }
   .navbar-nav .dropdown-menu .dropdown-item {
     font-size: 1.1rem;
@@ -873,7 +871,6 @@ footer p {
     text-align: left;
   }
   .navbar-nav .dropdown-menu {
-    min-width: 85vw;
     max-width: 95vw;
     left: 50% !important;
     right: auto !important;
