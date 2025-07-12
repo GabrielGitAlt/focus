@@ -818,6 +818,8 @@ footer p {
     width: 100%;
     padding: 1rem 0 !important;
     border-radius: 0.75rem;
+    font-size: 1.25rem;
+    font-weight: 600;
   }
   .navbar-nav .nav-item {
     margin-bottom: 1.1rem;
@@ -831,6 +833,10 @@ footer p {
     margin-top: 0.5rem;
     box-shadow: 0 8px 32px rgba(32, 132, 84, 0.13);
     border: none;
+    position: absolute !important;
+    top: 100% !important;
+    transform: none !important;
+    z-index: 9999;
   }
   .navbar-nav .dropdown-item {
     text-align: left;
@@ -841,5 +847,29 @@ footer p {
   .navbar {
     padding-left: 1rem !important;
     padding-right: 1rem !important;
+  }
+  .navbar-collapse {
+    max-height: 100vh;
+    overflow-y: auto;
+    width: 100vw;
+    background: var(--white);
+    z-index: 999;
+  }
+  .navbar-nav .dropdown {
+    width: 100%;
+    text-align: center;
+  }
+  .navbar-nav .dropdown-toggle {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  .navbar-nav .dropdown-menu .dropdown-item {
+    font-size: 1.1rem;
+    padding: 1rem 2rem;
+    text-align: left;
   }
 }
