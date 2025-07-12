@@ -33,9 +33,16 @@
     />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="{{ '/styles/styles.css' | relative_url }}" />
-
-    {% seo %}
+    <link
+      rel="stylesheet"
+      href="{{ '/assets/css/styles.css' | relative_url }}"
+    />
+    {% if page.url contains '/about' %}
+    <link
+      rel="stylesheet"
+      href="{{ '/assets/css/about.css' | relative_url }}"
+    />
+    {% endif %} {% seo %}
   </head>
   <body>
     {% include navigation.html %} {{ content }} {% include footer.html %}
