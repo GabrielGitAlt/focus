@@ -705,3 +705,50 @@ footer p {
 .subject-icon {
   opacity: 0.92;
 }
+
+.focus-action-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary-color);
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1.1rem 1.5rem;
+  font-size: 1.1rem;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(34, 102, 51, 0.07);
+  margin-bottom: 0.5rem;
+}
+.focus-action-btn:hover,
+.focus-action-btn:focus {
+  background: #184422;
+  color: #fff;
+  text-decoration: none;
+}
+.focus-action-btn i {
+  color: #fff;
+  transition: color 0.2s;
+}
+
+.section-padding[style*="--tertiary-color"] .hero-btn {
+  background: var(--white);
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  box-shadow: none;
+}
+.section-padding[style*="--tertiary-color"] .hero-btn:hover,
+.section-padding[style*="--tertiary-color"] .hero-btn:focus {
+  background: var(--primary-color);
+  color: #fff;
+  border: 2px solid var(--primary-color);
+}
+.section-padding[style*="--tertiary-color"] .hero-btn i {
+  color: inherit;
+}
