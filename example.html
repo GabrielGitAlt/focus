@@ -34,6 +34,7 @@
       class="navbar navbar-expand-lg navbar-light bg-light-custom custom-navbar"
     >
       <div class="container">
+        <!-- Logo -->
         <a class="navbar-brand d-flex align-items-center" href="#">
           <span class="logo-icon me-2">
             <!-- Example SVG icon for speech bubble -->
@@ -63,41 +64,52 @@
           </span>
         </a>
 
+        <!-- Hamburger for mobile -->
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
 
+        <!-- Main Navigation Links -->
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
+          <ul
+            class="navbar-nav ms-auto w-100 justify-content-center align-items-center"
+          >
+            <!-- Main nav links -->
+            <li class="nav-item w-100 text-center">
               <a class="nav-link" href="#about">About</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item w-100 text-center">
               <a class="nav-link" href="#our-events">Our Events</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item w-100 text-center">
               <a class="nav-link" href="#contact">Contact</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item w-100 text-center">
               <a class="nav-link" href="#past-events">Past Events</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item w-100 text-center">
               <a class="nav-link" href="#recap">Recap</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item w-100 text-center">
               <a class="nav-link" href="#portfolio">Portfolio</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item w-100 text-center">
               <a class="nav-link" href="#faq">FAQ</a>
             </li>
-          </ul>
-          <ul class="navbar-nav ms-3 d-flex flex-row align-items-center">
-            <li class="nav-item dropdown">
+            <!-- Social Dropdown (looks like a normal link, but opens more) -->
+            <li class="nav-item w-100 text-center dropdown">
+              <!--
+                To add/remove social links, edit the dropdown-menu below.
+                The main Social link is styled like the others for consistency.
+              -->
               <a
                 class="nav-link dropdown-toggle"
                 href="#"
@@ -109,12 +121,12 @@
                 Social
               </a>
               <ul
-                class="dropdown-menu dropdown-menu-end"
+                class="dropdown-menu w-100 text-center"
                 aria-labelledby="socialDropdown"
               >
                 <li>
                   <a
-                    class="dropdown-item d-flex align-items-center"
+                    class="dropdown-item d-flex align-items-center justify-content-center"
                     href="https://instagram.com/focusnonprofit_"
                     target="_blank"
                   >
@@ -123,7 +135,7 @@
                 </li>
                 <li>
                   <a
-                    class="dropdown-item d-flex align-items-center"
+                    class="dropdown-item d-flex align-items-center justify-content-center"
                     href="https://facebook.com/futureopportunitiesandcareerunderstandingforstudents"
                     target="_blank"
                   >
@@ -132,7 +144,7 @@
                 </li>
                 <li>
                   <a
-                    class="dropdown-item d-flex align-items-center"
+                    class="dropdown-item d-flex align-items-center justify-content-center"
                     href="https://linkedin.com/company/focus-non-profit-organization"
                     target="_blank"
                   >
@@ -141,7 +153,7 @@
                 </li>
                 <li>
                   <a
-                    class="dropdown-item d-flex align-items-center"
+                    class="dropdown-item d-flex align-items-center justify-content-center"
                     href="mailto:focusnonprofit24@gmail.com"
                     target="_blank"
                   >
