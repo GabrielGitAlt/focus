@@ -2,11 +2,7 @@
 
 /* About Hero Section */
 .about-hero-section {
-  background: linear-gradient(
-    135deg,
-    var(--secondary-color) 0%,
-    var(--tertiary-color) 100%
-  );
+  background: var(--white);
   padding: 80px 0;
   text-align: center;
 }
@@ -55,7 +51,7 @@
 /* Mission Section */
 .about-mission-section {
   padding: 10px 0;
-  background: #fff;
+  background: var(--tertiary-color);
 }
 
 .mission-content {
@@ -84,7 +80,7 @@
 /* Monthly Sessions Section */
 .about-sessions-section {
   padding: 80px 0;
-  background: var(--tertiary-color);
+  background: var(--secondary-color);
 }
 
 .sessions-subtitle {
@@ -314,7 +310,7 @@
 
 /* Engagement Section (Combined) */
 .about-engagement-section {
-  background: var(--tertiary-color);
+  background: var(--secondary-color);
   padding: 80px 0;
 }
 .engagement-card {
@@ -502,7 +498,6 @@
 }
 
 .about-involved-card {
-  background: var(--white);
   border: none;
   border-radius: 0;
   box-shadow: none;
@@ -511,7 +506,7 @@
   align-items: stretch;
   min-height: 320px;
   position: relative;
-  padding-left: 0.3rem;
+  padding: 1rem;
 }
 .about-involved-border {
   width: 2px;
