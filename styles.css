@@ -440,8 +440,6 @@ p {
   text-align: left !important;
 }
 .card-body {
-  padding: 0;
-  padding-left: 0.5em;
   display: block;
   min-height: unset;
   flex-direction: unset;
