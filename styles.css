@@ -2,15 +2,14 @@
    CSS VARIABLES (Simplified Palette)
    ============================= */
 :root {
-  --primary-color: #f23801; /* Main accent (orange) */
-  --secondary-color: #f7e4d6; /* Secondary accent (beige) */
-  --dark-color: #222; /* Main text color */
-  --light-color: #fafafa; /* Main background */
-  --gray: #e9ecef; /* Subtle border/background */
-  --white: #fff; /* Pure white */
-  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Standard shadow */
-  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1); /* Large shadow */
-  --transition: all 0.3s ease; /* Smooth transitions */
+  --primary-color: #226633; /* Deep green accent */
+  --secondary-color: #f5f4ee; /* Light beige/earthy background */
+  --dark-color: #184422; /* Dark green for text */
+  --gray: #b7c2b1; /* Muted greenish-gray for borders */
+  --white: #f9f9f6; /* Warm off-white */
+  --shadow: 0 4px 6px rgba(34, 102, 51, 0.07); /* Subtle green shadow */
+  --shadow-lg: 0 10px 15px rgba(34, 102, 51, 0.1); /* Large green shadow */
+  --transition: all 0.3s ease;
 }
 
 /* =============================
@@ -93,7 +92,7 @@ p {
   color: var(--primary-color) !important; /* Custom orange text */
 }
 .bg-light-custom {
-  background-color: var(--light-color) !important; /* Custom light background */
+  background-color: var(--secondary-color) !important;
 }
 .bg-secondary-custom {
   background-color: var(
