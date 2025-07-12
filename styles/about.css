@@ -502,11 +502,12 @@
   border-radius: 0;
   box-shadow: none;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: stretch;
   min-height: 320px;
   position: relative;
   padding: 1rem;
+  height: 100%;
 }
 .about-involved-border {
   width: 2px;
@@ -523,9 +524,15 @@
   padding-left: 1.1rem;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   height: 100%;
+  flex: 1 1 auto;
   width: 100%;
+}
+.about-involved-links {
+  margin-top: auto;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
 }
 .about-involved-title {
   font-family: "Cormorant", serif;
