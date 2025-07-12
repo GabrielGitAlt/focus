@@ -755,3 +755,12 @@ footer p {
     font-size: 1.05rem;
   }
 }
+
+.mission-btn {
+  background: rgba(
+    254,
+    254,
+    249,
+    0.7
+  ) !important; /* --white with 0.7 opacity */
+}
