@@ -3,7 +3,7 @@
    ============================= */
 
 .past-events-section {
-  background: var(--secondary-color);
+  background: var(--secondary-color) !important;
   padding: 80px 0;
 }
 .past-events-section .section-title {
