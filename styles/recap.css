@@ -82,6 +82,17 @@
 .recap-card-read {
   font-weight: 400;
 }
+.recap-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+.recap-card-link:hover,
+.recap-card-link:focus {
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+}
 
 @media (max-width: 991.98px) {
   .recap-card-content {
