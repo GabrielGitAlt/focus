@@ -139,6 +139,14 @@
   margin-bottom: 3rem;
   font-family: "Work Sans", sans-serif;
 }
+.team-title-lg {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: var(--primary-color);
+  letter-spacing: 0.01em;
+  margin-bottom: 2.2rem;
+  font-family: "Cormorant", serif;
+}
 .team-member-card {
   display: flex;
   flex-direction: column;
