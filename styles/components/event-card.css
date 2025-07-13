@@ -103,10 +103,11 @@
 
 /* Speakers */
 .event-card-speakers {
-  margin-top: 1.2rem;
   display: flex;
   flex-wrap: wrap;
   gap: 1.2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 .speaker {
   flex: 1 1 45%;
@@ -285,6 +286,7 @@
 .icon-text {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 0.25em;
   background: var(--tertiary-color);
   border-radius: 1.5em;
@@ -292,6 +294,7 @@
   margin-right: 0.7em;
   margin-bottom: 0.5em;
   box-sizing: border-box;
+  vertical-align: middle;
 }
 .icon-text i {
   margin-right: 0.18em;

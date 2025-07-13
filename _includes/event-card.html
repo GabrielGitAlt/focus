@@ -14,26 +14,26 @@
         <div class="event-card-detail-row flex-wrap">
           <span class="icon-text"
             ><i class="fa-regular fa-calendar"></i
-            ><span class="ms-1 me-3 event-card-date-time"
+            ><span class="ms-1 event-card-date-time"
               >{{ include.date }}</span
             ></span
           >
           <span class="icon-text"
             ><i class="fa-regular fa-clock"></i
-            ><span class="ms-1 me-3 event-card-date-time"
+            ><span class="ms-1 event-card-date-time"
               >{{ include.time }}</span
             ></span
           >
           <span class="icon-text"
             ><i class="fa-solid fa-location-dot"></i
-            ><span class="ms-1 me-3 event-card-location"
+            ><span class="ms-1 event-card-location"
               >{{ include.location }}</span
             ></span
           >
         </div>
       </div>
       {% if include.speakers and include.speakers.size > 0 %}
-      <div class="event-card-speakers mt-3 d-flex flex-row gap-4 flex-wrap">
+      <div class="event-card-speakers d-flex flex-row gap-4 flex-wrap">
         {% for speaker in include.speakers %} {% assign parts = speaker | split:
         ':' %}
         <div class="speaker d-flex align-items-center">
