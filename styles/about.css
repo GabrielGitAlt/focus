@@ -33,6 +33,15 @@
 .about-hero-section .fab.fa-instagram,
 .about-hero-section .fa-instagram {
   color: var(--primary-color) !important;
+  margin-right: 0.25em !important; /* Reduce space between icon and text */
+}
+
+/* Make Instagram link text same size as description */
+.about-hero-section .follow-instagram-text {
+  font-size: 1.25rem;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+  color: var(--primary-color);
 }
 
 /* Also apply to any Instagram icon in about-mission-section for legacy */
@@ -342,6 +351,16 @@
   margin-bottom: 0.7rem;
   background: var(--white);
   padding: 0.5rem;
+}
+
+/* Meet the Team section: use secondary color background */
+.about-team-section {
+  background: var(--secondary-color) !important;
+}
+
+/* Add space above Meet the Team heading */
+.team-title-lg {
+  margin-top: 2.5rem;
 }
 
 /* ===== MEDIA QUERIES ===== */
