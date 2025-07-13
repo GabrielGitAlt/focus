@@ -360,6 +360,22 @@
   margin-right: 0;
 }
 
+/* Hero subtext row (orange line + subtext) */
+.hero-subtext-row {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-bottom: 1.2rem;
+}
+
+/* Hero button row */
+.hero-btn-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.2rem;
+}
+
 @media (max-width: 576px) {
   .focus-acronym-wrapper {
     width: fit-content;
@@ -439,5 +455,17 @@
   }
   .hero-section-split .container.hero-text-col {
     align-items: center !important;
+  }
+  .hero-btn-row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.7rem;
+    margin-top: 0.7rem;
+  }
+  .hero-subtext-row {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.7rem;
   }
 }
