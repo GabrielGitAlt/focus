@@ -294,20 +294,20 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 0.18em;
+  gap: 0.21em;
   background: var(--tertiary-color);
-  border-radius: 1.2em;
-  padding: 0.22em 0.8em 0.22em 0.7em;
-  margin-right: 0.5em;
-  margin-bottom: 0.35em;
+  border-radius: 1.35em;
+  padding: 0.28em 0.95em 0.28em 0.8em;
+  margin-right: 0.6em;
+  margin-bottom: 0.42em;
   box-sizing: border-box;
   vertical-align: middle;
-  font-size: 0.98rem;
+  font-size: 1.04rem;
 }
 .icon-text i {
-  margin-right: 0.13em;
+  margin-right: 0.15em;
   color: var(--primary-color);
-  font-size: 1em;
+  font-size: 1.04em;
 }
 .icon-text .event-card-date-time,
 .icon-text .event-card-location {
