@@ -293,6 +293,7 @@
 /* ===== SCHOOLS SECTION ===== */
 .about-schools-section {
   background: var(--white);
+  padding: 40px 0;
 }
 .about-schools-section .card {
   background: var(--tertiary-color) !important;
