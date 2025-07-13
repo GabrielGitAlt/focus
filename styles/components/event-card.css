@@ -236,3 +236,27 @@
   color: var(--dark-color) !important;
   text-decoration: underline;
 }
+
+.event-card-gallery-thumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 120px;
+  border-radius: 14px;
+  background: var(--tertiary-color);
+  border: 1.5px solid var(--primary-color);
+  color: var(--primary-color) !important;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+.event-card-gallery-thumb:hover {
+  background: var(--primary-color);
+  color: var(--white) !important;
+  text-decoration: none;
+}
+.event-card-speaker-img-primary {
+  border: 1.5px solid rgba(34, 102, 51, 0.5) !important;
+}

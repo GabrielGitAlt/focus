@@ -30,18 +30,6 @@
               >{{ include.location }}</span
             ></span
           >
-          {% if include.gallery_link %}
-          <span class="icon-text"
-            ><a
-              href="{{ include.gallery_link }}"
-              class="event-card-gallery-link ms-1 me-3"
-              target="_blank"
-              rel="noopener"
-              ><i class="fa-regular fa-images"></i
-              ><span class="ms-1">Gallery</span></a
-            ></span
-          >
-          {% endif %}
         </div>
       </div>
       {% if include.speakers and include.speakers.size > 0 %}
@@ -50,7 +38,7 @@
         ':' %}
         <div class="speaker d-flex align-items-center">
           <img
-            class="event-card-speaker-img me-2"
+            class="event-card-speaker-img event-card-speaker-img-primary me-2"
             src="{{ site.baseurl }}/assets/images/events/{{ include.number }}/speaker{{ forloop.index }}.avif"
             alt="Speaker photo"
           />
@@ -75,6 +63,15 @@
           src="{{ site.baseurl }}/assets/images/events/{{ include.number }}/{{ include.number }}_2.avif"
           alt="Event image 2"
         />
+        {% if include.gallery_link %}
+        <a
+          href="{{ include.gallery_link }}"
+          class="event-card-gallery-thumb"
+          target="_blank"
+          rel="noopener"
+          >Gallery</a
+        >
+        {% endif %}
       </div>
     </div>
   </div>
