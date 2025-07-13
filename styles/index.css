@@ -304,6 +304,13 @@
     max-width: 100%;
   }
 }
+@media (min-width: 992px) and (max-width: 1300px) {
+  .contact-form .col-lg-6 {
+    width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 /* ===== UTILITY & RESPONSIVE CLASSES (INDEX ONLY) ===== */
 .ms-2 {
