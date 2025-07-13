@@ -1,0 +1,77 @@
+---
+layout: default
+title: {{ include.school_name }} - FOCUS Chapter
+permalink: /chapters/{{ include.school_slug }}/
+description: Meet the {{ include.school_name }} FOCUS chapter team and learn about our local initiatives.
+---
+
+<link rel="stylesheet" href="{{ site.baseurl }}/styles/global.css" />
+<link rel="stylesheet" href="{{ site.baseurl }}/styles/about.css" />
+
+<!-- Chapter Hero Section -->
+<section class="about-hero-section">
+  <div class="container">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-lg-6 text-center text-lg-start mb-4 mb-lg-0">
+        <h1 class="about-hero-title">{{ include.school_name }}</h1>
+        <p class="about-hero-subtitle">
+          Welcome to the {{ include.school_name }} FOCUS chapter! We're
+          dedicated to helping students explore career opportunities and make
+          informed decisions about their future.
+        </p>
+      </div>
+      <div class="col-lg-6 d-flex justify-content-center align-items-center">
+        <img
+          src="{{ '/assets/images/schools/' | append: include.school_logo | relative_url }}"
+          alt="{{ include.school_name }}"
+          class="img-fluid rounded shadow about-hero-img"
+          style="
+            max-width: 300px;
+            height: 300px;
+            object-fit: contain;
+            background: white;
+            padding: 1rem;
+          "
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Chapter Social Links Section -->
+{% if include.chapter_instagram %}
+<section class="about-mission-section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 text-center">
+        <h2 class="about-mission-heading mb-4">Follow Our Chapter</h2>
+        <div class="d-flex justify-content-center gap-4">
+          <a
+            href="https://instagram.com/{{ include.chapter_instagram }}"
+            target="_blank"
+            class="about-involved-link"
+          >
+            <i class="fab fa-instagram me-2"></i>
+            <span>@{{ include.chapter_instagram }}</span>
+            <span class="about-involved-arrow">&rarr;</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+<!-- Team Section -->
+<section class="about-team-section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10 text-center">
+        <h2 class="section-title team-title-lg">
+          Meet the {{ include.school_name }} Team!
+        </h2>
+        <div class="row team-members">{{ content }}</div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -290,6 +290,23 @@
   transform: translateY(-6px) scale(1.03);
   box-shadow: 0 8px 32px rgba(34, 102, 51, 0.13);
 }
+
+/* Make school cards look clickable */
+.about-schools-section a {
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease;
+}
+
+.about-schools-section a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.about-schools-section a:hover .card {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(34, 102, 51, 0.13);
+}
 .about-schools-section .card::before {
   display: none !important;
 }

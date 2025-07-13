@@ -1,0 +1,39 @@
+<!-- Team Member Component -->
+<div class="col-lg-4 col-md-6 mb-5">
+  <div class="team-member-card">
+    <div class="team-member-image">
+      <img
+        src="{{ '/assets/images/team/' | append: include.school_folder | append: '/' | append: include.image_name | relative_url }}"
+        alt="{{ include.name }}"
+        class="img-fluid"
+      />
+    </div>
+    <div class="team-member-info">
+      <div class="team-member-content-fixed">
+        <h3 class="team-member-name">{{ include.name }}</h3>
+        <p class="team-member-role">{{ include.role }}</p>
+        <p class="team-member-period">({{ include.period }})</p>
+        <p class="team-member-bio">{{ include.bio }}</p>
+      </div>
+      <hr />
+      <div class="team-member-contact">
+        <p><strong>Contact:</strong></p>
+        {% if include.email %}
+        <p><a href="mailto:{{ include.email }}">{{ include.email }}</a></p>
+        {% endif %} {% if include.phone %}
+        <p>{{ include.phone }}</p>
+        {% endif %} {% if include.instagram %}
+        <div class="team-member-social">
+          <a
+            href="https://instagram.com/{{ include.instagram }}"
+            target="_blank"
+            class="social-link"
+          >
+            <i class="fab fa-instagram"></i> Instagram
+          </a>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
