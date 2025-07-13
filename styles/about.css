@@ -1,7 +1,7 @@
 /* ===== HERO SECTION ===== */
 .about-hero-section {
   background: var(--white);
-  padding: 80px 0;
+  padding: 40px 0;
   text-align: center;
 }
 .about-hero-title {
@@ -54,7 +54,7 @@
 /* ===== ENGAGEMENT CARDS (Get Involved) ===== */
 .about-engagement-section {
   background: var(--white);
-  padding: 80px 0;
+  padding: 40px 0;
 }
 .card {
   background: transparent !important;
@@ -123,7 +123,7 @@
 
 /* ===== TEAM SECTION ===== */
 .about-team-section {
-  padding: 80px 0;
+  padding: 40px 0;
   background: var(--white);
   padding-top: 0 !important;
 }
@@ -271,7 +271,7 @@
 /* ===== SCHOOLS SECTION ===== */
 .about-schools-section {
   background: var(--white);
-  padding: 80px 0;
+  padding: 40px 0;
 }
 .about-schools-section .card {
   background: var(--tertiary-color) !important;
@@ -316,7 +316,7 @@
     height: 260px;
   }
   .about-engagement-section {
-    padding: 60px 0;
+    padding: 40px 0;
   }
   .team-member-card {
     margin-bottom: 2rem;
@@ -325,7 +325,7 @@
     justify-content: center;
   }
   .about-schools-section {
-    padding: 60px 0;
+    padding: 40px 0;
   }
 }
 @media (max-width: 768px) {
@@ -398,12 +398,6 @@
   }
   .about-schools-section {
     padding: 40px 0;
-  }
-}
-@media (min-width: 577px) {
-  .about-team-section {
-    padding-top: 3.5rem;
-    padding-bottom: 3.5rem;
   }
 }
 @media (max-width: 1000px) {
