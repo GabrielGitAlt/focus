@@ -271,7 +271,6 @@
 /* ===== SCHOOLS SECTION ===== */
 .about-schools-section {
   background: var(--white);
-  padding: 40px 0;
 }
 .about-schools-section .card {
   background: var(--tertiary-color) !important;
@@ -330,9 +329,6 @@
   }
   .team-member-social {
     justify-content: center;
-  }
-  .about-schools-section {
-    padding: 40px 0;
   }
 }
 @media (max-width: 768px) {
@@ -402,9 +398,6 @@
   }
   .team-member-info {
     padding-bottom: 1.2rem;
-  }
-  .about-schools-section {
-    padding: 40px 0;
   }
 }
 @media (max-width: 1000px) {
