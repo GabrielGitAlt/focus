@@ -1,0 +1,47 @@
+/* =============================
+   CURRENT EVENTS PAGE STYLES
+   ============================= */
+
+.current-events-section {
+  background: var(--secondary-color);
+  padding: 80px 0;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+}
+
+.current-events-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+  font-family: "Cormorant", serif;
+}
+
+.current-events-message {
+  font-size: 1.35rem;
+  color: var(--dark-color);
+  font-family: "Work Sans", sans-serif;
+  margin-bottom: 0;
+}
+
+.current-events-stay-tuned {
+  display: block;
+  margin-top: 1.2rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 1.1rem;
+  letter-spacing: 0.02em;
+}
+
+@media (max-width: 768px) {
+  .current-events-section {
+    padding: 50px 0;
+  }
+  .current-events-title {
+    font-size: 2rem;
+  }
+  .current-events-message {
+    font-size: 1.1rem;
+  }
+}
