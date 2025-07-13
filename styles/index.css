@@ -376,6 +376,32 @@
   margin-top: 1.2rem;
 }
 
+/* What We Do buttons: consistent width and icon alignment */
+.what-we-do-btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  width: 100%;
+}
+.what-we-do-btns .hero-btn {
+  width: 100%;
+  max-width: 370px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.btn-text {
+  flex: 1 1 auto;
+  text-align: left;
+}
+.btn-icon {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
 @media (max-width: 576px) {
   .focus-acronym-wrapper {
     width: fit-content;
@@ -467,5 +493,11 @@
     align-items: center;
     gap: 0.5rem;
     margin-bottom: 0.7rem;
+  }
+  .what-we-do-btns {
+    align-items: center;
+  }
+  .what-we-do-btns .hero-btn {
+    max-width: 100%;
   }
 }
