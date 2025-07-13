@@ -251,7 +251,7 @@
   opacity: 1;
 }
 
-/* ===== CONTACT FORM ===== */
+/* ===== CONTACT FORM (CONSOLIDATED) ===== */
 .contact-form {
   background-color: var(--secondary-color);
 }
@@ -306,6 +306,20 @@
     margin-right: auto;
   }
 }
+@media (max-width: 991.98px) {
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .contact-form .btn,
+  .contact-form .btn-outline-primary {
+    display: block;
+    width: 100%;
+    margin-right: 0 !important;
+    margin-bottom: 0;
+  }
+}
 
 /* ===== UTILITY & RESPONSIVE CLASSES (INDEX ONLY) ===== */
 .ms-2 {
@@ -324,19 +338,5 @@
 @media (max-width: 991.98px) {
   .row > .col-lg-4.mb-4 {
     margin-bottom: 2rem !important;
-  }
-}
-@media (max-width: 991.98) {
-  .contact-form form {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-  .contact-form .btn,
-  .contact-form .btn-outline-primary {
-    display: block;
-    width: 100%;
-    margin-right: 0 !important;
-    margin-bottom: 0;
   }
 }
