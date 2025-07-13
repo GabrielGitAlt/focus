@@ -145,8 +145,7 @@
 /* ===== TEAM SECTION ===== */
 .about-team-section {
   padding: 40px 0;
-  background: var(--white);
-  padding-top: 0 !important;
+  background: var(--secondary-color) !important;
 }
 .section-title {
   font-size: 2.5rem;
@@ -235,11 +234,6 @@
   margin-bottom: 0.7rem;
   background: var(--white);
   padding: 0.5rem;
-}
-
-/* Meet the Team section: use secondary color background */
-.about-team-section {
-  background: var(--secondary-color) !important;
 }
 
 /* Add space above Meet the Team heading */
