@@ -352,11 +352,23 @@
   justify-content: center;
 }
 
+/* Default: align left */
+.focus-acronym-wrapper {
+  display: block;
+  width: auto;
+  margin-left: 0;
+  margin-right: 0;
+}
+
 @media (max-width: 576px) {
+  .focus-acronym-wrapper {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .hero-text-col {
     padding: 1.2rem 0.7rem 2rem 0.7rem !important;
     margin-top: 1.2rem;
-    padding-left: 1.5rem !important;
   }
   .focus-acronym-heading {
     font-size: 2.1rem;
