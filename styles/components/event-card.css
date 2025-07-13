@@ -126,6 +126,20 @@
   font-family: "Work Sans", sans-serif;
 }
 
+.event-card-gallery.gallery {
+  flex-direction: column;
+  gap: 1.2rem;
+  align-items: flex-start;
+}
+
+@media (max-width: 991.98px) {
+  .event-card-gallery.gallery {
+    flex-direction: row;
+    gap: 0.7rem;
+    align-items: center;
+  }
+}
+
 @media (max-width: 991.98px) {
   .event-card {
     padding: 1.2rem 0.7rem 1.2rem 0.7rem;
