@@ -24,6 +24,14 @@
   font-family: "Work Sans", sans-serif;
   letter-spacing: 0.04em;
 }
+.event-card-number-inline {
+  font-size: 1rem;
+  font-family: "Work Sans", sans-serif;
+  color: var(--dark-color);
+  font-weight: 700;
+  margin-right: 0.7rem;
+  vertical-align: middle;
+}
 .event-card-title {
   font-size: 1.5rem;
   font-weight: 700;
@@ -165,4 +173,31 @@
     width: 32px;
     height: 32px;
   }
+  .event-card-gallery.gallery {
+    flex-direction: column;
+    gap: 0.7rem;
+    align-items: flex-start;
+  }
+}
+
+.event-card-detail-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--primary-color);
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.08rem;
+  margin-bottom: 0.7rem;
+}
+.event-card-detail-row i {
+  color: var(--primary-color);
+  font-size: 1.2em;
+  margin-right: 0.5em;
+}
+.event-card-detail-row .event-card-date-time,
+.event-card-detail-row .event-card-location {
+  color: var(--primary-color);
+  font-family: inherit;
+  font-size: inherit;
+  margin: 0;
 }
