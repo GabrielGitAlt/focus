@@ -437,4 +437,7 @@
     justify-content: flex-start !important;
     gap: 0.7rem;
   }
+  .hero-section-split .container.hero-text-col {
+    align-items: center !important;
+  }
 }
