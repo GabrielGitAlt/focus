@@ -285,6 +285,17 @@
   border-color: var(--dark-color) !important;
   color: var(--white) !important;
 }
+.btn-outline-primary {
+  border-color: var(--primary-color) !important;
+  color: var(--primary-color) !important;
+  background: var(--white) !important;
+}
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+  background: var(--primary-color) !important;
+  color: var(--white) !important;
+  border-color: var(--primary-color) !important;
+}
 
 /* ===== UTILITY & RESPONSIVE CLASSES (INDEX ONLY) ===== */
 .ms-2 {
