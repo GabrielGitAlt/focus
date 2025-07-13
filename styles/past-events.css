@@ -1,0 +1,115 @@
+/* =============================
+   PAST EVENTS PAGE STYLES
+   ============================= */
+
+.past-events-section {
+  background: var(--secondary-color);
+  padding: 80px 0;
+}
+.past-events-section .section-title {
+  color: var(--primary-color);
+  font-family: "Cormorant", serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+}
+.past-events-section .row {
+  gap: 2.5rem 0;
+}
+
+/* Event card container tweaks */
+.past-events-section .event-card {
+  background: var(--white);
+  border-radius: 18px;
+  box-shadow: 0 4px 16px rgba(34, 102, 51, 0.07);
+  margin-bottom: 2.5rem;
+  padding: 2.2rem 1.5rem 1.5rem 1.5rem;
+  transition: box-shadow 0.2s, transform 0.2s;
+  border: none;
+}
+.past-events-section .event-card:hover {
+  box-shadow: 0 8px 32px rgba(34, 102, 51, 0.13);
+  transform: translateY(-4px) scale(1.01);
+}
+
+/* Event card title */
+.past-events-section .event-title {
+  color: var(--primary-color);
+  font-family: "Cormorant", serif;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.7rem;
+}
+.past-events-section .event-date-time {
+  color: var(--dark-color);
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+.past-events-section .event-location {
+  color: var(--gray);
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+/* Gallery images */
+.past-events-section .event-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-bottom: 1.2rem;
+}
+.past-events-section .event-gallery img {
+  width: 120px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 10px;
+  background: var(--tertiary-color);
+  box-shadow: 0 2px 8px rgba(34, 102, 51, 0.07);
+}
+
+/* Speakers */
+.past-events-section .event-speakers {
+  margin-top: 1.2rem;
+}
+.past-events-section .event-speaker {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.7rem;
+}
+.past-events-section .event-speaker img {
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+  border-radius: 50%;
+  background: var(--tertiary-color);
+}
+.past-events-section .event-speaker-info {
+  font-size: 1.08rem;
+  color: var(--dark-color);
+}
+
+@media (max-width: 991.98px) {
+  .past-events-section {
+    padding: 60px 0;
+  }
+  .past-events-section .event-card {
+    padding: 1.2rem 0.7rem 1rem 0.7rem;
+  }
+  .past-events-section .event-title {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 576px) {
+  .past-events-section {
+    padding: 40px 0;
+  }
+  .past-events-section .event-gallery img {
+    width: 90px;
+    height: 70px;
+  }
+  .past-events-section .event-speaker img {
+    width: 40px;
+    height: 40px;
+  }
+}

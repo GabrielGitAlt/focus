@@ -1,0 +1,33 @@
+<!-- Event Card Component -->
+<div class="event-card">
+  <div class="event-card-number">{{ include.number }}</div>
+  <div class="event-card-title">{{ include.title }}</div>
+  <div class="event-card-date-time">{{ include.date }}</div>
+  <div class="event-card-date-time">{{ include.time }}</div>
+  <div class="event-card-location">{{ include.location }}</div>
+  {% if include.gallery and include.gallery.size > 0 %}
+  <div class="event-card-gallery mb-2">
+    {% for img in include.gallery %}
+    <img src="{{ img }}" alt="Event photo" />
+    {% endfor %}
+  </div>
+  {% endif %} {% if include.speakers and include.speakers.size > 0 %}
+  <div class="event-card-speakers">
+    {% for speaker in include.speakers %}
+    <div class="event-card-speaker">
+      {% if speaker.img %}
+      <img
+        class="event-card-speaker-img"
+        src="{{ speaker.img }}"
+        alt="{{ speaker.name }}"
+      />
+      {% endif %}
+      <div class="event-card-speaker-info">
+        <div class="event-card-speaker-name">{{ speaker.name }}</div>
+        <div class="event-card-speaker-title">{{ speaker.title }}</div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+</div>

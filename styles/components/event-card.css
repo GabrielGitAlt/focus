@@ -1,0 +1,106 @@
+/* EVENT CARD COMPONENT STYLES */
+
+.event-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(34, 102, 51, 0.07);
+  border: 2px solid rgba(34, 102, 51, 0.13);
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  margin-bottom: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.event-card:hover {
+  box-shadow: 0 8px 32px rgba(34, 102, 51, 0.13);
+  transform: translateY(-4px) scale(1.01);
+}
+.event-card-number {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+  font-family: "Cormorant", serif;
+}
+.event-card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+  font-family: "Cormorant", serif;
+}
+.event-card-date-time {
+  font-size: 1.08rem;
+  color: var(--dark-color);
+  margin-bottom: 0.2rem;
+  font-family: "Work Sans", sans-serif;
+}
+.event-card-location {
+  font-size: 1.08rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-family: "Work Sans", sans-serif;
+}
+.event-card-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.2rem;
+}
+.event-card-gallery img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1.5px solid var(--tertiary-color);
+  background: var(--secondary-color);
+}
+.event-card-speakers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  margin-bottom: 0.7rem;
+}
+.event-card-speaker {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-bottom: 0.5rem;
+}
+.event-card-speaker-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--primary-color);
+  background: var(--secondary-color);
+}
+.event-card-speaker-info {
+  display: flex;
+  flex-direction: column;
+}
+.event-card-speaker-name {
+  font-size: 1.08rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  font-family: "Cormorant", serif;
+}
+.event-card-speaker-title {
+  font-size: 0.98rem;
+  color: var(--dark-color);
+  font-family: "Work Sans", sans-serif;
+}
+@media (max-width: 768px) {
+  .event-card {
+    padding: 1.2rem 0.7rem 1.2rem 0.7rem;
+  }
+  .event-card-gallery img {
+    width: 54px;
+    height: 54px;
+  }
+  .event-card-speaker-img {
+    width: 38px;
+    height: 38px;
+  }
+}
