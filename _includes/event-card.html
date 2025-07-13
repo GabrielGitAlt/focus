@@ -1,7 +1,9 @@
 <!-- Event Card Component -->
 <div class="event-card">
   <div class="d-flex align-items-center mb-2">
-    <div class="event-card-number me-3">{{ include.number }}</div>
+    <div class="event-card-number me-3">
+      {{ include.number | prepend: '0' | slice: -2, 2 }}
+    </div>
     <div class="event-card-title section-title mb-0">{{ include.title }}</div>
   </div>
   <div class="d-flex align-items-center mb-2">
@@ -19,8 +21,14 @@
     <span class="event-card-location">{{ include.location }}</span>
   </div>
   <div class="event-card-gallery mb-3">
-    <img src="{{ include.event_img1 }}" alt="Event image 1" />
-    <img src="{{ include.event_img2 }}" alt="Event image 2" />
+    <img
+      src="{{ site.baseurl }}/assets/images/events/{{ include.number }}/{{ include.number }}_1.avif"
+      alt="Event image 1"
+    />
+    <img
+      src="{{ site.baseurl }}/assets/images/events/{{ include.number }}/{{ include.number }}_2.avif"
+      alt="Event image 2"
+    />
     {% if include.gallery_link %}
     <a
       href="{{ include.gallery_link }}"
@@ -43,13 +51,13 @@
       <div class="event-card-speaker d-flex align-items-center">
         <img
           class="event-card-speaker-img me-2"
-          src="{{ parts[0] | strip }}"
+          src="{{ site.baseurl }}/assets/images/events/{{ include.number }}/speaker{{ forloop.index }}.avif"
           alt="Speaker photo"
         />
         <div class="event-card-speaker-info">
-          <div class="event-card-speaker-name">{{ parts[1] | strip }}</div>
-          {% if parts.size > 2 %}
-          <div class="event-card-speaker-title">{{ parts[2] | strip }}</div>
+          <div class="event-card-speaker-name">{{ parts[0] | strip }}</div>
+          {% if parts.size > 1 %}
+          <div class="event-card-speaker-title">{{ parts[1] | strip }}</div>
           {% endif %}
         </div>
       </div>
