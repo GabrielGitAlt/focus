@@ -2,22 +2,20 @@
 
 .event-card {
   background: #fff;
-  border-radius: 16px;
-  box-shadow: 0 4px 16px rgba(34, 102, 51, 0.07);
+  border-radius: 15px;
+  box-shadow: none !important;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: 2px solid rgba(34, 102, 51, 0.13);
-  padding: 2rem 1.5rem 1.5rem 1.5rem;
-  margin-bottom: 2.5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  transition: box-shadow 0.2s, transform 0.2s;
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 .event-card:hover {
-  box-shadow: 0 8px 32px rgba(34, 102, 51, 0.13);
-  transform: translateY(-4px) scale(1.01);
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px 0 rgba(35, 42, 39, 0.18) !important;
 }
 .event-card-number {
   font-size: 1.1rem;
@@ -126,10 +124,10 @@
   flex-direction: column;
 }
 .event-card-speaker-name {
-  font-size: 1.08rem;
-  font-weight: 600;
-  color: var(--primary-color);
   font-family: "Cormorant", serif;
+  color: var(--dark-color);
+  font-size: 1.08rem;
+  font-weight: 700;
 }
 .event-card-speaker-title {
   font-size: 0.98rem;
