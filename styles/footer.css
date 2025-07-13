@@ -127,3 +127,41 @@
   color: var(--tertiary-color);
   text-decoration: none;
 }
+
+@media (max-width: 660px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2.5rem;
+  }
+  .footer-logo-block {
+    align-items: center;
+    margin-bottom: 1.2rem;
+  }
+  .footer-links-columns {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+    margin-bottom: 1.2rem;
+  }
+  .footer-links-col {
+    align-items: center;
+  }
+  .footer-social {
+    min-width: unset;
+    margin-bottom: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-bottom-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7rem;
+    padding-top: 1.2rem;
+    padding-bottom: 0.5rem;
+    width: 100%;
+    text-align: center;
+  }
+}
