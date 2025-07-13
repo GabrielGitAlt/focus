@@ -297,7 +297,8 @@
   font-family: "Cormorant", serif;
   font-size: 1.25rem;
   font-weight: 700;
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
 }
 .about-schools-section img {
   width: 120px;
