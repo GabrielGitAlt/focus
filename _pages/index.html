@@ -304,23 +304,24 @@ permalink: /
         <div
           class="d-flex align-items-center justify-content-center"
           style="min-height: 250px"
+          id="testimonial-slider"
         >
-          <button class="testimonial-arrow me-3">
+          <button class="testimonial-arrow me-3" id="testimonial-prev">
             <i class="fa-solid fa-angle-left"></i>
           </button>
-          <div class="w-100">
-            <p class="text-uppercase text-muted mb-3">Parent</p>
-            <h3 class="testimonial-name mb-3">Kate Holmes</h3>
-            <p class="testimonial-text mx-auto mb-4">
-              When I realized that I wanted to be an actress, the first thing I
-              did was the enrollment in LoudSpeech. The course helped me a lot
-              in acting classes and to get my first role. My result of education
-              includes beautiful speech, smooth intonations, nice tune. Totally
-              recommend!
+          <div class="w-100" id="testimonial-content">
+            <p class="text-uppercase text-muted mb-3" id="testimonial-role">
+              Parent
             </p>
-            <div class="testimonial-date mb-3">December 15, 2024</div>
+            <h3 class="testimonial-name mb-3" id="testimonial-name">
+              Shelley Liu
+            </h3>
+            <p class="testimonial-text mx-auto mb-4" id="testimonial-text">
+              The career exploration sessions provided valuable insights and
+              inspiration for my child's future. Highly recommended!
+            </p>
           </div>
-          <button class="testimonial-arrow ms-3">
+          <button class="testimonial-arrow ms-3" id="testimonial-next">
             <i class="fa-solid fa-angle-right"></i>
           </button>
         </div>
@@ -386,3 +387,71 @@ permalink: /
     </div>
   </div>
 </section>
+
+<script>
+  const testimonials = [
+    {
+      text: "The career exploration sessions provided valuable insights and inspiration for my child's future. Highly recommended!",
+      name: "Shelley Liu",
+      role: "Parent",
+    },
+    {
+      text: "The interactive platform and engaging speakers made the sessions truly enriching. Thank you for this initiative.",
+      name: "Jun Wang",
+      role: "Parent",
+    },
+    {
+      text: "A fantastic way for students to gain exposure to diverse career options. Kudos to the team for organizing such informative sessions!",
+      name: "Sharon Chan",
+      role: "Parent",
+    },
+  ];
+  let currentTestimonial = 0;
+  const testimonialText = document.getElementById("testimonial-text");
+  const testimonialName = document.getElementById("testimonial-name");
+  const testimonialRole = document.getElementById("testimonial-role");
+  const dots = document.querySelectorAll(".testimonial-dot");
+
+  function showTestimonial(idx) {
+    testimonialText.textContent = testimonials[idx].text;
+    testimonialName.textContent = testimonials[idx].name;
+    testimonialRole.textContent = testimonials[idx].role;
+    dots.forEach((dot, i) => {
+      dot.classList.toggle("active", i === idx);
+    });
+  }
+
+  document.getElementById("testimonial-prev").addEventListener("click", () => {
+    currentTestimonial =
+      (currentTestimonial - 1 + testimonials.length) % testimonials.length;
+    showTestimonial(currentTestimonial);
+  });
+  document.getElementById("testimonial-next").addEventListener("click", () => {
+    currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+    showTestimonial(currentTestimonial);
+  });
+
+  // Touch/swipe support
+  let startX = 0;
+  let endX = 0;
+  const slider = document.getElementById("testimonial-slider");
+  slider.addEventListener("touchstart", (e) => {
+    startX = e.touches[0].clientX;
+  });
+  slider.addEventListener("touchend", (e) => {
+    endX = e.changedTouches[0].clientX;
+    if (endX - startX > 40) {
+      // swipe right
+      currentTestimonial =
+        (currentTestimonial - 1 + testimonials.length) % testimonials.length;
+      showTestimonial(currentTestimonial);
+    } else if (startX - endX > 40) {
+      // swipe left
+      currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+      showTestimonial(currentTestimonial);
+    }
+  });
+
+  // Initialize
+  showTestimonial(currentTestimonial);
+</script>
