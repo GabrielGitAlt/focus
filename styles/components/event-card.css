@@ -41,11 +41,13 @@
   color: var(--primary-color);
   margin-bottom: 0.5rem;
   font-family: "Cormorant", serif;
+  line-height: 1.08;
 }
 .event-card-title.section-title {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  line-height: 1.08;
 }
 .event-card-date-time {
   font-size: 1.08rem;
@@ -241,6 +243,11 @@
     flex-direction: column;
     gap: 0.7rem;
     align-items: flex-start;
+  }
+  .event-card-title,
+  .event-card-title.section-title {
+    margin-bottom: 0.35rem;
+    line-height: 1.05;
   }
 }
 
