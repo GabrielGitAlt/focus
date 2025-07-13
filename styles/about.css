@@ -163,7 +163,7 @@
 
 .team-member-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 12px 40px 0 rgba(34, 102, 51, 0.35);
+  box-shadow: 0 12px 40px 0 rgba(35, 42, 39, 0.18);
 }
 
 .team-member-image {
