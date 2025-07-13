@@ -11,6 +11,9 @@
   flex-direction: column;
   align-items: flex-start;
   transition: box-shadow 0.2s, transform 0.2s;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .event-card:hover {
   box-shadow: 0 8px 32px rgba(34, 102, 51, 0.13);
@@ -113,9 +116,9 @@
 .event-card-speaker-img {
   width: 56px;
   height: 56px;
-  border-radius: 50%;
+  border-radius: 12px;
   object-fit: cover;
-  border: 2px solid var(--primary-color);
+  border: 1.5px solid var(--tertiary-color);
   background: var(--secondary-color);
 }
 .event-card-speaker-info {
@@ -135,7 +138,7 @@
 }
 
 .event-card-gallery.gallery {
-  flex-direction: column;
+  flex-direction: row;
   gap: 1.2rem;
   align-items: flex-start;
 }
