@@ -29,6 +29,18 @@
   box-shadow: 0 10px 30px rgba(34, 102, 51, 0.15);
 }
 
+/* Make Instagram icon use primary color instead of blue */
+.about-hero-section .fab.fa-instagram,
+.about-hero-section .fa-instagram {
+  color: var(--primary-color) !important;
+}
+
+/* Also apply to any Instagram icon in about-mission-section for legacy */
+.about-mission-section .fab.fa-instagram,
+.about-mission-section .fa-instagram {
+  color: var(--primary-color) !important;
+}
+
 /* ===== MISSION SECTION ===== */
 .about-mission-section {
   padding: 10px 0;
