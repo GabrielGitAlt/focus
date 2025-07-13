@@ -7,11 +7,11 @@
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: 2px solid rgba(34, 102, 51, 0.13) !important;
-  max-width: 700px;
+  max-width: 950px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
 }
 .event-card:hover {
   transform: translateY(-5px);
@@ -104,6 +104,15 @@
 /* Speakers */
 .event-card-speakers {
   margin-top: 1.2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+}
+.speaker {
+  flex: 1 1 45%;
+  min-width: 260px;
+  max-width: 50%;
+  box-sizing: border-box;
 }
 .event-card-speaker {
   display: flex;
@@ -148,11 +157,24 @@
   max-width: none;
   border-radius: 14px;
   border: 2px solid rgba(34, 102, 51, 0.13);
+  box-sizing: border-box;
 }
 .event-card-gallery-thumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--tertiary-color);
   font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--primary-color) !important;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
 }
-
+.event-card-gallery-thumb:hover {
+  background: var(--primary-color);
+  color: var(--white) !important;
+  text-decoration: none;
+}
 .event-card-speaker-img,
 .event-card-speaker-img-primary {
   width: 80px;
@@ -182,6 +204,15 @@
   .event-card-speaker-img-primary {
     width: 60px;
     height: 80px;
+  }
+  .event-card {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .speaker {
+    min-width: 180px;
+    max-width: 100%;
+    flex-basis: 100%;
   }
 }
 @media (max-width: 576px) {
@@ -255,6 +286,12 @@
   display: inline-flex;
   align-items: center;
   gap: 0.25em;
+  background: var(--tertiary-color);
+  border-radius: 1.5em;
+  padding: 0.35em 1.1em 0.35em 0.9em;
+  margin-right: 0.7em;
+  margin-bottom: 0.5em;
+  box-sizing: border-box;
 }
 .icon-text i {
   margin-right: 0.18em;
@@ -283,26 +320,6 @@
   text-decoration: underline;
 }
 
-.event-card-gallery-thumb {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 180px;
-  height: 120px;
-  border-radius: 14px;
-  background: var(--tertiary-color);
-  border: 1.5px solid var(--primary-color);
-  color: var(--primary-color) !important;
-  font-weight: 600;
-  font-size: 1.1rem;
-  text-decoration: none;
-  transition: background 0.2s, color 0.2s;
-}
-.event-card-gallery-thumb:hover {
-  background: var(--primary-color);
-  color: var(--white) !important;
-  text-decoration: none;
-}
 .event-card-speaker-img-primary {
   border: 1.5px solid rgba(34, 102, 51, 0.5) !important;
 }
