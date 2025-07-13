@@ -201,3 +201,35 @@
   font-size: inherit;
   margin: 0;
 }
+
+.icon-text {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25em;
+}
+.icon-text i {
+  margin-right: 0.18em;
+  color: var(--primary-color);
+  font-size: 1.15em;
+}
+.icon-text .event-card-date-time,
+.icon-text .event-card-location {
+  color: var(--primary-color);
+  font-family: inherit;
+  font-size: inherit;
+  margin: 0;
+}
+.icon-text a,
+.event-card-gallery-link {
+  color: var(--primary-color) !important;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  transition: color 0.2s;
+}
+.icon-text a:hover,
+.event-card-gallery-link:hover {
+  color: var(--dark-color) !important;
+  text-decoration: underline;
+}
