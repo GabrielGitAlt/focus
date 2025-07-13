@@ -299,11 +299,6 @@
 .contact-form .col-lg-6 {
   max-width: 700px;
 }
-@media (max-width: 991.98px) {
-  .contact-form .col-lg-6 {
-    max-width: 100%;
-  }
-}
 @media (min-width: 992px) and (max-width: 1300px) {
   .contact-form .col-lg-6 {
     width: 850px;
@@ -331,7 +326,7 @@
     margin-bottom: 2rem !important;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 991.98) {
   .contact-form form {
     display: flex;
     flex-direction: column;
