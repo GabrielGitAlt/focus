@@ -342,11 +342,11 @@
 }
 
 .blue-hero-bg {
-  background: #2563eb;
+  /* background: #2563eb; */
   background-image: url("/assets/images/landing.png");
   height: 82vh;
   width: 100%;
-  border-radius: 0 0 0 2.5rem;
+  /* border-radius: 0 0 0 2.5rem; */
   display: flex;
   align-items: center;
   justify-content: center;
