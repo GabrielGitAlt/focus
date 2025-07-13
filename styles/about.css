@@ -154,16 +154,16 @@
   align-items: stretch;
   background: #fff;
   border-radius: 15px;
-  box-shadow: 0 8px 25px rgba(34, 102, 51, 0.1);
+  box-shadow: none;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   height: 100%;
-  border: 1px solid rgba(34, 102, 51, 0.1);
+  border: 2px solid rgba(34, 102, 51, 0.13);
 }
 
 .team-member-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 15px 35px rgba(34, 102, 51, 0.2);
+  box-shadow: 0 12px 40px 0 rgba(34, 102, 51, 0.35);
 }
 
 .team-member-image {
