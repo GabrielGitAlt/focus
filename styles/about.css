@@ -365,3 +365,9 @@
     margin-bottom: 0.7rem;
   }
 }
+@media (min-width: 992px) {
+  .about-mission-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
