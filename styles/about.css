@@ -583,8 +583,11 @@
     font-size: 1.3rem;
   }
 }
-@media (max-width: 576px) {
-  /* 1. Mission heading gap fix */
+@media (max-width: 1000px) {
+  .about-mission-section {
+    padding: 60px 0;
+  }
+
   .about-mission-section .row {
     min-height: unset;
     flex-direction: column;
@@ -595,45 +598,5 @@
   }
   .about-mission-heading {
     margin-bottom: 0.7rem;
-  }
-  /* 2. Get Involved card border fix */
-  .about-involved-card {
-    flex-direction: column;
-    min-height: 0;
-    padding-left: 0.5rem;
-    padding-top: 0.7rem;
-    padding-bottom: 0.7rem;
-  }
-  .about-involved-border {
-    position: static;
-    width: 40px;
-    height: 2px;
-    margin: 0 0 1rem 0.2rem;
-    background: var(--primary-color);
-  }
-  .about-involved-content {
-    padding-left: 0.5rem;
-  }
-  /* 3. Team section spacing fix */
-  .about-team-section {
-    padding-top: 2.2rem;
-    padding-bottom: 2.2rem;
-  }
-  /* 4. Reduce space after team member bio/contact */
-  .team-member-content-fixed {
-    min-height: unset;
-    max-height: unset;
-    margin-bottom: 0.7rem;
-  }
-  .team-member-info {
-    padding-bottom: 1.2rem;
-  }
-}
-
-/* Desktop: reduce space before team section */
-@media (min-width: 577px) {
-  .about-team-section {
-    padding-top: 3.5rem;
-    padding-bottom: 3.5rem;
   }
 }
