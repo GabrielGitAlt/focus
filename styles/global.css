@@ -1,0 +1,136 @@
+/* =============================
+   GLOBAL STYLES & VARIABLES
+   ============================= */
+
+/* ===== CSS VARIABLES (Color Palette, Fonts) ===== */
+:root {
+  --primary-color: #226633;
+  --secondary-color: #f1f5ee;
+  --tertiary-color: #e3f2e8;
+  --dark-color: #184422;
+  --gray: #70766e;
+  --white: #fefef9;
+  --light-black: #232a27;
+  --shadow: 0 4px 6px rgba(34, 102, 51, 0.07);
+  --shadow-lg: 0 10px 15px rgba(34, 102, 51, 0.1);
+  --transition: all 0.3s ease;
+}
+
+/* ===== RESET & BASE STYLES ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, sans-serif;
+  line-height: 1.6;
+  color: var(--dark-color);
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+/* ===== TYPOGRAPHY ===== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Cormorant", Georgia, serif;
+  font-weight: 700;
+  color: var(--dark-color);
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+h1 {
+  font-size: 3.5rem;
+}
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 2.5rem;
+}
+h4 {
+  font-size: 2rem;
+}
+h5 {
+  font-size: 1.5rem;
+}
+h6 {
+  font-size: 1.25rem;
+}
+p {
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+.lead {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+.display-5 {
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+/* ===== UTILITY CLASSES ===== */
+.text-primary-custom {
+  color: var(--primary-color) !important;
+}
+.bg-light-custom {
+  background-color: var(--secondary-color) !important;
+}
+.section-padding {
+  padding: 80px 0;
+}
+.mb-2 {
+  margin-bottom: 0.5rem !important;
+}
+.mb-3 {
+  margin-bottom: 1rem !important;
+}
+.mb-4 {
+  margin-bottom: 1.5rem !important;
+}
+.mb-5 {
+  margin-bottom: 3rem !important;
+}
+
+/* ===== RESPONSIVE TYPOGRAPHY ===== */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  .display-5 {
+    font-size: 2.5rem;
+  }
+  .section-padding {
+    padding: 60px 0;
+  }
+}
+@media (max-width: 576px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
+  .display-5 {
+    font-size: 2rem;
+  }
+  .section-padding {
+    padding: 40px 0;
+  }
+}
