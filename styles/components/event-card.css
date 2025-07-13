@@ -17,11 +17,12 @@
   transform: translateY(-4px) scale(1.01);
 }
 .event-card-number {
-  font-size: 2.2rem;
-  font-weight: 800;
+  font-size: 1.1rem;
+  font-weight: 700;
   color: var(--primary-color);
-  margin-bottom: 0.5rem;
-  font-family: "Cormorant", serif;
+  margin-bottom: 0.2rem;
+  font-family: "Work Sans", sans-serif;
+  letter-spacing: 0.04em;
 }
 .event-card-title {
   font-size: 1.5rem;
@@ -43,12 +44,27 @@
   font-family: "Work Sans", sans-serif;
 }
 
+.event-card-header {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.7rem;
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+
+.event-card-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 /* Event images at the top */
 .event-card-gallery {
   display: flex;
   flex-wrap: wrap;
   gap: 1.2rem;
-  margin-bottom: 1.2rem;
+  margin-top: 2rem;
+  margin-bottom: 0;
   width: 100%;
   justify-content: flex-start;
   align-items: center;
