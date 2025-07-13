@@ -12,56 +12,63 @@ description: Recap of all past FOCUS events, including photos, speakers, and eve
   <div class="container">
     <h1 class="section-title text-center mb-5">Past Events</h1>
     <div class="row justify-content-center">
-      {% assign gallery07 = "DAE3D4E7-EB99-4D1A-B294-239E45977AF0.JPG,Screenshot
-      2025-02-09 at 00.17.34.png" | split: "," %} {% assign speakers07 =
-      "Katherine Maina: Biomedical Imaging Manager at Massachusetts General
-      Hospital.,Screenshot 2025-02-09 at 00.17.23.png,Francisco Javier Quintana:
-      Professor of Neurology at Harvard Medical School,DSC_3781.JPG" | split:
-      "," %} {% include event-card.html number="07" title="Neuropath: Careers
-      and Brain Science" date="February 8th" time="12:30pm - 2:30pm"
-      location="Westwood Public Library" gallery=gallery07 speakers=speakers07
-      %} {% assign gallery06 =
-      "638211B6-72EF-4F4B-BA89-3597E406BFBE.JPG,Screenshot 2025-02-06 at
-      23.17.48.png" | split: "," %} {% assign speakers06 = "Rebecca Adams: Child
-      Growth and Development
-      Educator,68AB1236-F415-4217-AAAC-7D069F4F3D1D.JPG,MaryBeth Kinkead:
-      Principal of Natick Public School Integrated Preschool" | split: "," %} {%
-      include event-card.html number="06" title="Small Hands Big Plans"
-      date="February 1st" time="1:00pm - 3:00pm" location="Natick Morse
-      Institute Library" gallery=gallery06 speakers=speakers06 %} {% assign
-      gallery05 = "DSC_3363.JPG,Screenshot 2025-02-05 at 12.42.56.png" | split:
-      "," %} {% assign speakers05 = "Caroline Lee: Cybersecurity
-      Engineer,Screenshot 2025-02-05 at 12.42.32.png,Screenshot 2025-02-05 at
-      12.43.05.png,Lucas,Nathan Morgan: Molecule Design
-      Researcher,DSC_3011.JPG,Lisa Bard Levine: CEO of the Maven Project" |
-      split: "," %} {% include event-card.html number="05" title="Engineer Your
-      Future" date="January 4th" time="2:00pm - 3:30pm" location="Brookline
-      Village Public Library" gallery=gallery05 speakers=speakers05 %} {% assign
-      gallery04 = "E5079092-CA3E-427A-AF0D-CFF6789A2BD2_edi,IMG_2169.jpeg" |
-      split: "," %} {% assign speakers04 = "" | split: "," %} {% include
-      event-card.html number="04" title="Future Founders" date="December 8th"
-      time="2:00pm - 3:30pm" location="Brookline Village Public Library"
-      gallery=gallery04 speakers=speakers04 %} {% assign gallery03 = "Screenshot
-      2024-12-02 at 00.50.08.png" | split: "," %} {% assign speakers03 = "Glora
-      Tan: State Court Juvenile Judge,Screenshot 2024-12-02 at 00.50.15.png,Kay
-      Khan: Massachusetts Representative,Screenshot 2024-11-24 at
-      22.46.47.png,Jinyun Chen: Biomedical Researcher" | split: "," %} {%
-      include event-card.html number="03" title="Justice For All" date="December
-      1st" time="2:00pm - 3:30pm" location="Newton Free Library"
-      gallery=gallery03 speakers=speakers03 %} {% assign gallery02 = "Screenshot
-      2024-11-24 at 22.47.04.png,IMG_1818.jpeg" | split: "," %} {% assign
-      speakers02 = "Dr. Hong Truong: Addictive Medicine Specialist" | split: ","
-      %} {% include event-card.html number="02" title="Fall Into Medicine"
-      date="November 3rd" time="1:00pm - 2:30pm" location="WPS Campus"
-      gallery=gallery02 speakers=speakers02 %} {% assign gallery01 =
-      "IMG_6457.jpeg,IMG_1380.jpeg" | split: "," %} {% assign speakers01 = "Dr.
-      Daniel Sun: Orthopedic
-      Surgeon,B304C074-131B-4E7E-A81A-F3DE52526F33.jpeg,Becky Harris: PT
-      Epidemiologist,Amy Picture for Outlook - Amy Quach.png,Amy Quach: Clinical
-      Pharmacist Manager,1727397000703 - Kerry Demers (1).jpeg,Kerry Demers:
+      {% assign speakers07 = "assets/images/events/7/speaker1.avif: Katherine
+      Maina: Biomedical Imaging Manager at Massachusetts General
+      Hospital.,assets/images/events/7/speaker2.avif: Francisco Javier Quintana:
+      Professor of Neurology at Harvard Medical School" | split: "," %} {%
+      include event-card.html number="07" title="Neuropath: Careers and Brain
+      Science" date="February 8th" time="12:30pm - 2:30pm" location="Westwood
+      Public Library" event_img1="assets/images/events/7/7_1.avif"
+      event_img2="assets/images/events/7/7_2.avif" gallery_link="#"
+      speakers=speakers07 %} {% assign speakers06 =
+      "assets/images/events/6/speaker1.avif: Rebecca Adams: Child Growth and
+      Development Educator,assets/images/events/6/speaker2.avif: MaryBeth
+      Kinkead: Principal of Natick Public School Integrated Preschool" | split:
+      "," %} {% include event-card.html number="06" title="Small Hands Big
+      Plans" date="February 1st" time="1:00pm - 3:00pm" location="Natick Morse
+      Institute Library" event_img1="assets/images/events/6/6_1.avif"
+      event_img2="assets/images/events/6/6_2.avif" gallery_link="#"
+      speakers=speakers06 %} {% assign speakers05 =
+      "assets/images/events/5/speaker1.avif: Caroline Lee: Cybersecurity
+      Engineer,assets/images/events/5/speaker2.avif: Lucas:
+      Student,assets/images/events/5/speaker3.avif: Nathan Morgan: Molecule
+      Design Researcher,assets/images/events/5/speaker4.avif: Lisa Bard Levine:
+      CEO of the Maven Project" | split: "," %} {% include event-card.html
+      number="05" title="Engineer Your Future" date="January 4th" time="2:00pm -
+      3:30pm" location="Brookline Village Public Library"
+      event_img1="assets/images/events/5/5_1.avif"
+      event_img2="assets/images/events/5/5_2.avif" gallery_link="#"
+      speakers=speakers05 %} {% assign speakers04 =
+      "assets/images/events/4/speaker1.avif: Speaker Name: Title" | split: ","
+      %} {% include event-card.html number="04" title="Future Founders"
+      date="December 8th" time="2:00pm - 3:30pm" location="Brookline Village
+      Public Library" event_img1="assets/images/events/4/4_1.avif"
+      event_img2="assets/images/events/4/4_2.avif" gallery_link="#"
+      speakers=speakers04 %} {% assign speakers03 =
+      "assets/images/events/3/speaker1.avif: Glora Tan: State Court Juvenile
+      Judge,assets/images/events/3/speaker2.avif: Kay Khan: Massachusetts
+      Representative,assets/images/events/3/speaker3.avif: Jinyun Chen:
+      Biomedical Researcher" | split: "," %} {% include event-card.html
+      number="03" title="Justice For All" date="December 1st" time="2:00pm -
+      3:30pm" location="Newton Free Library"
+      event_img1="assets/images/events/3/3_1.avif"
+      event_img2="assets/images/events/3/3_2.avif" gallery_link="#"
+      speakers=speakers03 %} {% assign speakers02 =
+      "assets/images/events/2/speaker1.avif: Dr. Hong Truong: Addictive Medicine
+      Specialist" | split: "," %} {% include event-card.html number="02"
+      title="Fall Into Medicine" date="November 3rd" time="1:00pm - 2:30pm"
+      location="WPS Campus" event_img1="assets/images/events/2/2_1.avif"
+      event_img2="assets/images/events/2/2_2.avif" gallery_link="#"
+      speakers=speakers02 %} {% assign speakers01 =
+      "assets/images/events/1/speaker1.avif: Dr. Daniel Sun: Orthopedic
+      Surgeon,assets/images/events/1/speaker2.avif: Becky Harris: PT
+      Epidemiologist,assets/images/events/1/speaker3.avif: Amy Quach: Clinical
+      Pharmacist Manager,assets/images/events/1/speaker4.avif: Kerry Demers:
       Hand/Occupational Therapist" | split: "," %} {% include event-card.html
       number="01" title="Medical Month" date="October 13th, 2024" time="1:30pm -
-      4:30pm" location="Newton Free Library" gallery=gallery01
+      4:30pm" location="Newton Free Library"
+      event_img1="assets/images/events/1/1_1.avif"
+      event_img2="assets/images/events/1/1_2.avif" gallery_link="#"
       speakers=speakers01 %}
     </div>
   </div>
