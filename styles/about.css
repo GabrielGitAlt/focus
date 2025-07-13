@@ -268,6 +268,47 @@
   font-size: 1rem;
 }
 
+/* ===== SCHOOLS SECTION ===== */
+.about-schools-section {
+  background: var(--white);
+  padding: 80px 0;
+}
+.about-schools-section .card {
+  background: var(--tertiary-color) !important;
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(34, 102, 51, 0.07);
+  align-items: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.about-schools-section .card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(34, 102, 51, 0.13);
+}
+.about-schools-section .card::before {
+  display: none !important;
+}
+.about-schools-section .card {
+  margin: 0 0.5rem 2.5rem 0.5rem;
+  padding: 2rem 1.2rem 1.5rem 1.2rem !important;
+}
+.about-schools-section .card-title {
+  color: var(--primary-color);
+  font-family: "Cormorant", serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.about-schools-section img {
+  width: 120px;
+  height: 120px;
+  border-radius: 18px;
+  object-fit: cover;
+  margin-bottom: 1.2rem;
+  background: var(--white);
+  padding: 0.5rem;
+}
+
 /* ===== MEDIA QUERIES ===== */
 @media (max-width: 991.98px) {
   .about-hero-img {
@@ -282,6 +323,9 @@
   }
   .team-member-social {
     justify-content: center;
+  }
+  .about-schools-section {
+    padding: 60px 0;
   }
 }
 @media (max-width: 768px) {
@@ -309,7 +353,8 @@
   .about-sessions-section,
   .about-volunteer-section,
   .about-leadership-section,
-  .about-team-section {
+  .about-team-section,
+  .about-schools-section {
     padding: 60px 0;
   }
   .about-hero-title {
@@ -350,6 +395,9 @@
   }
   .team-member-info {
     padding-bottom: 1.2rem;
+  }
+  .about-schools-section {
+    padding: 40px 0;
   }
 }
 @media (min-width: 577px) {
