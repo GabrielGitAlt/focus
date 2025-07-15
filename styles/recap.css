@@ -103,7 +103,7 @@
 }
 .recap-post-header-bg h1 {
   font-family: "Cormorant", serif;
-  font-size: 2.3rem;
+  font-size: 3.2rem;
   font-weight: 700;
   color: var(--primary-color);
   margin-bottom: 1.2rem;
@@ -129,6 +129,17 @@
   color: var(--dark-color);
   font-size: 1.13rem;
   line-height: 1.7;
+}
+.recap-post-content h2 {
+  font-size: 1.45rem;
+}
+.recap-post-content h3 {
+  font-size: 1.22rem;
+}
+.recap-post-content h4,
+.recap-post-content h5,
+.recap-post-content h6 {
+  font-size: 1.08rem;
 }
 .recap-post-content h2,
 .recap-post-content h3,
