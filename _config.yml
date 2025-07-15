@@ -1,7 +1,7 @@
-title: FOCUS - Future Opportunities and Career Understanding for Students
-description: A non-profit organization providing career exploration and guidance for students
-baseurl: "/focus"
-url: ""
+# Jekyll configuration for focusnonprofit.com
+url: "https://focusnonprofit.com"
+# baseurl removed for custom domain deployment
+# Add any other config options below as needed
 
 # Build settings
 markdown: kramdown
