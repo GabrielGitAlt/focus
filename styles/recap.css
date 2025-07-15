@@ -2,6 +2,9 @@
    RECAP (BLOG) PAGE STYLES
    ============================= */
 
+.recap-post-section {
+  background: var(--white);
+}
 .recap-hero-section {
   background: var(--white);
   padding: 70px 0 40px 0;
@@ -129,6 +132,7 @@
   color: var(--dark-color);
   font-size: 1.13rem;
   line-height: 1.7;
+  margin-bottom: 4rem;
 }
 .recap-post-content h2 {
   font-size: 1.45rem;
